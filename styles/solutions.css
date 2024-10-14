@@ -36,4 +36,69 @@
   font-size: 70px;
   align-items: center;
   width: 800px;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+.mainpage .maintextdiv .personbutton {
+  border: 2px solid black;
+  border-radius: 25px;
+  align-items: center;
+  /* Rounded sliders */
+}
+.mainpage .maintextdiv .personbutton .slideractive {
+  font-family: Inter;
+}
+.mainpage .maintextdiv .personbutton .slidernotactive {
+  font-family: Inter;
+}
+.mainpage .maintextdiv .personbutton .switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 52px;
+  border: black solid;
+  border-radius: 34px;
+}
+.mainpage .maintextdiv .personbutton .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.mainpage .maintextdiv .personbutton .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transition: 0.4s;
+}
+.mainpage .maintextdiv .personbutton .slider:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 4px;
+  bottom: 4px;
+  transition: 0.4s;
+}
+.mainpage .maintextdiv .personbutton input:checked + .slider {
+  background-color: #00084B;
+}
+.mainpage .maintextdiv .personbutton input:focus {
+  box-shadow: 0 0 1px #00084B;
+}
+.mainpage .maintextdiv .personbutton span.slider.round::before {
+  background-color: #00084B;
+}
+.mainpage .maintextdiv .personbutton input:checked + .slider:before {
+  transform: translateX(45px);
+}
+.mainpage .maintextdiv .personbutton .slider.round {
+  border-radius: 34px;
+}
+.mainpage .maintextdiv .personbutton .slider.round:before {
+  border-radius: 50%;
 }/*# sourceMappingURL=solutions.css.map */

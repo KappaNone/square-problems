@@ -32,6 +32,77 @@
             font-size: 70px;
             align-items: center;
             width: 800px;
+            font-weight: 900;
+            margin-top: 50px;
+            margin-bottom: 0px;
         }
+        .personbutton{
+            border: 2px solid black;
+            border-radius: 25px;
+            align-items: center;
+            .slideractive{
+            font-family: Inter;
+            }
+            .slidernotactive{
+            font-family: Inter;
+            }
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 100px;
+                height: 52px;
+                border: black solid;
+                border-radius: 34px;
+            }
+                .switch input { 
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: white;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                }
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 40px;
+                    width: 40px;
+                    left: 4px;
+                    bottom: 4px;
+                    -webkit-transition: .4s;
+                    transition: .4s
+                }
+                
+                    input:checked + .slider {
+                        background-color: #00084B;
+                    }
+                    input:focus {
+                        box-shadow: 0 0 1px #00084B;
+                    }
+                        span.slider.round::before{
+                            background-color: #00084B;
+                        }
+                        input:checked + .slider:before {
+                            -webkit-transform: translateX(45px);
+                            -ms-transform: translateX(45px);
+                            transform: translateX(45px);
+                        }
+                /* Rounded sliders */
+                .slider.round {
+                    border-radius: 34px;
+                }
+                .slider.round:before {
+                    border-radius: 50%;
+                 }
+                
+         }
     }
 }
