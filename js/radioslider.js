@@ -1,12 +1,8 @@
-var radiotoggle = false;
+function PriceFunction() {
+    var T = document.getElementById("HighDiv"),
+        displayValue = "";
+    if (T.style.display == "")
+        displayValue = "none";
 
-if (radiotoggle == false)
-{
-    document.getElementById('slider round').style.display = block;
-    radiotoggle = true;
-}
-else
-{
-    document.getElementById('slider round').style.display = none;
-    radiotoggle = false;
+    T.style.display = displayValue;
 }
