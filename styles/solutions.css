@@ -7,12 +7,33 @@
 .mainpage {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.mainpage .circlesubplans {
+.mainpage .maintextdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mainpage .maintextdiv .circlesubplans {
   display: flex;
   border: solid black 2px;
   border-radius: 30px;
   font-size: 1.8rem;
   font-family: Inter;
   padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.mainpage .maintextdiv .maintext {
+  display: flex;
+  font-family: Inter;
+  font-size: 70px;
+  align-items: center;
+  width: 800px;
 }/*# sourceMappingURL=solutions.css.map */
