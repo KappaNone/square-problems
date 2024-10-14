@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  margin: auto;
+  justify-content: space-between;
+  border: none;
+  align-items: center;
+  padding: 12px 0;
+}
+.header .headerbuttonbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .headerbuttonbox .headerbutton {
+  padding: 0;
+  border: none;
+  background: none;
+  margin: 20px;
+  font-size: 1.3rem;
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.header .headerbuttonbox .headerbutton:hover {
+  -webkit-text-decoration: underline darkslategray;
+          text-decoration: underline darkslategray;
+}
+.header .headerbuttonbox .active {
+  text-decoration: underline;
+}
+.header .headerbuttonbox .headerlogo {
+  display: flex;
+  justify-content: right;
+  display: inline-block;
+  height: 45px;
+  margin-left: 25px;
+  margin-right: 12px;
+}
+.header .headerright {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.header .headerright .Demobutton {
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: #00084B;
+  border: none;
+  color: white;
+  margin-left: 0px;
+  margin-right: 25px;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+.header .headerright .Demobutton:hover {
+  background-color: #00090B;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.header .headerright .dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 1.3rem;
+  border: none;
+}
+.header .headerright .dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 0;
+  margin-right: 20px;
+}
+.header .headerright .dropdown:hover .dropdown-content {
+  display: block;
+}
+.header .headerright .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.header .headerright .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+}
+.header .headerright .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.header .headerright .dropdown-content a:hover {
+  background-color: #ddd;
+}/*# sourceMappingURL=global.css.map */
