@@ -9,18 +9,30 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 3fr 1fr;
   background-color: #F3F3F3;
-  height: 70%;
+  height: 75%;
   margin: 35px;
   padding: 35px;
   border-radius: 25px;
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1050px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 .main .main-img {
   width: 90%;
   margin-inline: auto;
   grid-column: 2/3;
   grid-row: 2/3;
+}
+@media screen and (max-width: 1050px) {
+  .main .main-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }
 .main .main-text-container {
   width: 100%;
