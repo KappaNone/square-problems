@@ -4,19 +4,20 @@
   box-sizing: border-box;
 }
 
-.mainpage {
+.MainPage {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.mainpage .maintextdiv {
+.MainPage .MainTextDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.mainpage .maintextdiv .circlesubplans {
+.MainPage .MainTextDiv .CircleSubPlans {
   display: flex;
   border: solid black 2px;
   border-radius: 30px;
@@ -30,7 +31,7 @@
   height: -moz-fit-content;
   height: fit-content;
 }
-.mainpage .maintextdiv .maintext {
+.MainPage .MainTextDiv .MainText {
   display: flex;
   font-family: Inter;
   font-size: 70px;
@@ -40,32 +41,50 @@
   margin-top: 50px;
   margin-bottom: 0px;
 }
-.mainpage .maintextdiv .personbutton {
+.MainPage .MainTextDiv .PersonButton {
   border: 2px solid black;
   border-radius: 25px;
+  justify-content: space-evenly;
+  display: inline-flex;
   align-items: center;
-  /* Rounded sliders */
+  padding: 2px 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-.mainpage .maintextdiv .personbutton .slideractive {
+.MainPage .MainTextDiv .PersonButton .SliderActive {
   font-family: Inter;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 0px;
+  margin-right: 15px;
 }
-.mainpage .maintextdiv .personbutton .slidernotactive {
+.MainPage .MainTextDiv .PersonButton .SliderNotActive {
   font-family: Inter;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: 0px;
 }
-.mainpage .maintextdiv .personbutton .switch {
+.MainPage .MainTextDiv .PersonButton .SliderDiv {
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.MainPage .MainTextDiv .PersonButton .switch {
+  --secondary-container: #00084B;
+  --primary: white;
+  font-size: 17px;
   position: relative;
   display: inline-block;
-  width: 100px;
-  height: 52px;
-  border: black solid;
-  border-radius: 34px;
+  width: 3.7em;
+  height: 1.8em;
 }
-.mainpage .maintextdiv .personbutton .switch input {
+.MainPage .MainTextDiv .PersonButton .switch input {
+  display: none;
   opacity: 0;
   width: 0;
   height: 0;
 }
-.mainpage .maintextdiv .personbutton .slider {
+.MainPage .MainTextDiv .PersonButton .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -73,32 +92,144 @@
   right: 0;
   bottom: 0;
   background-color: white;
-  transition: 0.4s;
+  transition: 0.2s;
+  border-radius: 30px;
 }
-.mainpage .maintextdiv .personbutton .slider:before {
+.MainPage .MainTextDiv .PersonButton .slider:before {
   position: absolute;
   content: "";
-  height: 40px;
-  width: 40px;
-  left: 4px;
-  bottom: 4px;
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.2em;
+  bottom: 0.2em;
+  background-color: #00084b;
   transition: 0.4s;
 }
-.mainpage .maintextdiv .personbutton input:checked + .slider {
-  background-color: #00084B;
+.MainPage .MainTextDiv .PersonButton input:checked + .slider::before {
+  background-color: var(--primary);
 }
-.mainpage .maintextdiv .personbutton input:focus {
-  box-shadow: 0 0 1px #00084B;
+.MainPage .MainTextDiv .PersonButton input:checked + .slider {
+  background-color: var(--secondary-container);
 }
-.mainpage .maintextdiv .personbutton span.slider.round::before {
-  background-color: #00084B;
+.MainPage .MainTextDiv .PersonButton input:focus + .slider {
+  box-shadow: 0 0 1px var(--secondary-container);
 }
-.mainpage .maintextdiv .personbutton input:checked + .slider:before {
-  transform: translateX(45px);
+.MainPage .MainTextDiv .PersonButton input:checked + .slider:before {
+  transform: translateX(1.9em);
 }
-.mainpage .maintextdiv .personbutton .slider.round {
-  border-radius: 34px;
+.MainPage .PriceHolder {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
-.mainpage .maintextdiv .personbutton .slider.round:before {
-  border-radius: 50%;
+.MainPage .PriceHolder .WorkspaceDiv {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  flex-direction: column;
+  margin: 20px;
+  width: 500px;
+}
+.MainPage .PriceHolder .WorkspaceDiv .TopTextLeft {
+  display: flex;
+  justify-content: space-around;
+}
+.MainPage .PriceHolder .WorkspaceDiv .TopTextLeft .CircleWorkspace {
+  font-weight: bold;
+  font-family: Inter;
+  font-size: 25px;
+}
+.MainPage .PriceHolder .WorkspaceDiv .TopTextLeft .BasicPlan {
+  font-family: Inter;
+  color: gray;
+  font-size: small;
+  position: relative;
+  top: 25%;
+}
+.MainPage .PriceHolder .WorkspaceDiv .StartFrom {
+  font-family: Inter;
+  color: gray;
+}
+.MainPage .PriceHolder .WorkspaceDiv .PriceLeft {
+  display: inline-flex;
+}
+.MainPage .PriceHolder .WorkspaceDiv .PriceLeft .MainPrice {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 25px;
+}
+.MainPage .PriceHolder .WorkspaceDiv .PriceLeft .Month {
+  font-family: Inter;
+  font-size: small;
+  position: relative;
+  top: 10px;
+}
+.MainPage .PriceHolder .WorkspaceDiv .DarkGrey {
+  color: darkslategray;
+  font-family: Inter;
+  font-size: small;
+  font-weight: 600;
+}
+.MainPage .PriceHolder .WorkspaceDiv .Grey {
+  color: gray;
+  font-family: Inter;
+  font-size: small;
+  font-weight: 600;
+}
+.MainPage .DOTSDiv {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  flex-direction: column;
+  margin: 20px;
+  width: 500px;
+}
+.MainPage .DOTSDiv .TopTextLeft .CircleWorkspace {
+  display: flex;
+  font-weight: bold;
+  font-family: Inter;
+  font-size: 25px;
+}
+.MainPage .DOTSDiv .TopTextLeft .BasicPlan {
+  display: flex;
+  font-family: Inter;
+  color: gray;
+  font-size: small;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+  bottom: 50%;
+}
+.MainPage .DOTSDiv .StartFrom {
+  font-family: Inter;
+  color: gray;
+}
+.MainPage .DOTSDiv .PriceLeft {
+  display: inline-flex;
+}
+.MainPage .DOTSDiv .PriceLeft .MainPrice {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 25px;
+}
+.MainPage .DOTSDiv .PriceLeft .Month {
+  font-family: Inter;
+  font-size: small;
+  position: relative;
+  top: 10px;
+}
+.MainPage .DOTSDiv .DarkGrey {
+  color: darkslategray;
+  font-family: Inter;
+  font-size: small;
+  font-weight: 600;
+}
+.MainPage .DOTSDiv .Grey {
+  color: gray;
+  font-family: Inter;
+  font-size: small;
+  font-weight: 600;
 }/*# sourceMappingURL=solutions.css.map */

@@ -4,17 +4,18 @@
     box-sizing: border-box;
 
 }
-.mainpage {
+.MainPage {
     display: flex;
     justify-content: center;
     align-items: center;
-    .maintextdiv{
+    flex-direction: column;
+    .MainTextDiv{
         display: flex;
         flex-direction: column;
        justify-content: center;
        align-items: center;
        text-align: center;
-        .circlesubplans { 
+        .CircleSubPlans { 
             display: flex;
             border: solid black 2px;
             border-radius: 30px;
@@ -26,7 +27,7 @@
             width: fit-content;
             height: fit-content;
         }
-        .maintext {
+        .MainText {
             display: flex;
             font-family: Inter;
             font-size: 70px;
@@ -36,29 +37,50 @@
             margin-top: 50px;
             margin-bottom: 0px;
         }
-        .personbutton{
+        .PersonButton{
             border: 2px solid black;
             border-radius: 25px;
+            justify-content: space-evenly;
+            display: inline-flex ;
             align-items: center;
-            .slideractive{
+            padding: 2px 20px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            .SliderActive{
             font-family: Inter;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 0px;
+            margin-right: 15px;
             }
-            .slidernotactive{
+            .SliderNotActive{
             font-family: Inter;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 15px;
+            margin-right: 0px;
             }
-            .switch {
-                position: relative;
-                display: inline-block;
-                width: 100px;
-                height: 52px;
-                border: black solid;
-                border-radius: 34px;
+            .SliderDiv {
+                border: 2px solid black;
+                border-radius: 30px;
             }
-                .switch input { 
+                .switch {
+                    --secondary-container: #00084B;
+                    --primary: white;
+                    font-size: 17px;
+                    position: relative;
+                    display: inline-block;
+                    width: 3.7em;
+                    height: 1.8em;
+                }
+                
+                .switch input {
+                    display: none;
                     opacity: 0;
                     width: 0;
                     height: 0;
                 }
+                
                 .slider {
                     position: absolute;
                     cursor: pointer;
@@ -67,42 +89,159 @@
                     right: 0;
                     bottom: 0;
                     background-color: white;
-                    -webkit-transition: .4s;
-                    transition: .4s;
+                    transition: .2s;
+                    border-radius: 30px;
                 }
+                
                 .slider:before {
                     position: absolute;
                     content: "";
-                    height: 40px;
-                    width: 40px;
-                    left: 4px;
-                    bottom: 4px;
-                    -webkit-transition: .4s;
-                    transition: .4s
+                    height: 1.4em;
+                    width: 1.4em;
+                    border-radius: 20px;
+                    left: 0.2em;
+                    bottom: 0.2em;
+                    background-color: #00084b;
+                    transition: .4s;
                 }
                 
-                    input:checked + .slider {
-                        background-color: #00084B;
-                    }
-                    input:focus {
-                        box-shadow: 0 0 1px #00084B;
-                    }
-                        span.slider.round::before{
-                            background-color: #00084B;
-                        }
-                        input:checked + .slider:before {
-                            -webkit-transform: translateX(45px);
-                            -ms-transform: translateX(45px);
-                            transform: translateX(45px);
-                        }
-                /* Rounded sliders */
-                .slider.round {
-                    border-radius: 34px;
+                input:checked + .slider::before {
+                    background-color: var(--primary);
                 }
-                .slider.round:before {
-                    border-radius: 50%;
-                 }
                 
-         }
+                input:checked + .slider {
+                    background-color: var(--secondary-container);
+                }
+                
+                input:focus + .slider {
+                    box-shadow: 0 0 1px var(--secondary-container);
+                }
+                
+                input:checked + .slider:before {
+                    transform: translateX(1.9em);
+                }
+            }
     }
-}
+    .PriceHolder {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+
+        .WorkspaceDiv {
+            display: flex;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 15px;
+            flex-direction: column;
+            margin: 20px;
+            width: 500px;
+            .TopTextLeft {
+                display: flex;
+                justify-content: space-around;
+                .CircleWorkspace {
+                    font-weight: bold;
+                    font-family: Inter;
+                    font-size: 25px;
+                }
+                .BasicPlan{
+                    font-family: Inter;
+                    color: gray;
+                    font-size: small;
+                    position: relative;
+                    top: 25%;
+                }
+            }
+            .StartFrom {
+                font-family: Inter;
+                color: gray;
+            }
+            .PriceLeft {
+                display:inline-flex;
+                .MainPrice {
+                    font-family: Inter;
+                    font-weight: 900;
+                    font-size: 25px;
+                }
+                .Month {
+                    font-family: Inter;
+                    font-size: small;
+                    position:relative;
+                    top: 10px;
+                }
+            }
+            .DarkGrey {
+               color: darkslategray;
+               font-family: Inter;
+               font-size: small;
+               font-weight: 600;
+            }
+            .Grey {
+                color: gray;
+                font-family: Inter;
+                font-size: small;
+                font-weight: 600;
+            }
+            }
+        }
+        .DOTSDiv {
+            display: flex;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 15px;
+            flex-direction: column;
+            margin: 20px;
+            width: 500px;
+            .TopTextLeft {
+                .CircleWorkspace {
+                    display: flex;
+                    font-weight: bold;
+                    font-family: Inter;
+                    font-size: 25px;
+                
+                }
+                .BasicPlan{
+                    display: flex;
+                    font-family: Inter;
+                    color: gray;
+                    font-size: small;
+                    align-items: center;
+                    justify-content: right;
+                    position: relative;
+                    bottom: 50%;
+                }
+            }
+            .StartFrom {
+                font-family: Inter;
+                color: gray;
+            }
+            .PriceLeft {
+                display:inline-flex;
+                .MainPrice {
+                    font-family: Inter;
+                    font-weight: 900;
+                    font-size: 25px;
+                }
+                .Month {
+                    font-family: Inter;
+                    font-size: small;
+                    position:relative;
+                    top: 10px;
+                }
+            }
+            .DarkGrey {
+               color: darkslategray;
+               font-family: Inter;
+               font-size: small;
+               font-weight: 600;
+            }
+            .Grey {
+                color: gray;
+                font-family: Inter;
+                font-size: small;
+                font-weight: 600;
+            }
+            }
+        }
+        
+
+    
