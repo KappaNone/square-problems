@@ -120,13 +120,17 @@
 }
 .MainPage .PriceHolder {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: row;
 }
 .MainPage .PriceHolder .WorkspaceDiv {
+  display: flex;
   border: 2px solid black;
   border-radius: 20px;
   padding: 15px;
+  flex-direction: column;
+  margin: 20px;
+  width: 500px;
 }
 .MainPage .PriceHolder .WorkspaceDiv .TopTextLeft {
   display: flex;
@@ -141,16 +145,91 @@
   font-family: Inter;
   color: gray;
   font-size: small;
+  position: relative;
+  top: 25%;
 }
-.MainPage .PriceHolder .WorkspaceDiv .TopTextLeft .StartFrom {
+.MainPage .PriceHolder .WorkspaceDiv .StartFrom {
   font-family: Inter;
   color: gray;
 }
-.MainPage .PriceHolder .WorkspaceDiv .TopTextLeft .PriceLeft {
-  flex-direction: row;
+.MainPage .PriceHolder .WorkspaceDiv .PriceLeft {
+  display: inline-flex;
 }
-.MainPage .PriceHolder .WorkspaceDiv .TopTextLeft .PriceLeft .MainPrice {
+.MainPage .PriceHolder .WorkspaceDiv .PriceLeft .MainPrice {
   font-family: Inter;
   font-weight: 900;
   font-size: 25px;
+}
+.MainPage .PriceHolder .WorkspaceDiv .PriceLeft .Month {
+  font-family: Inter;
+  font-size: small;
+  position: relative;
+  top: 10px;
+}
+.MainPage .PriceHolder .WorkspaceDiv .DarkGrey {
+  color: darkslategray;
+  font-family: Inter;
+  font-size: small;
+  font-weight: 600;
+}
+.MainPage .PriceHolder .WorkspaceDiv .Grey {
+  color: gray;
+  font-family: Inter;
+  font-size: small;
+  font-weight: 600;
+}
+.MainPage .DOTSDiv {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  flex-direction: column;
+  margin: 20px;
+  width: 500px;
+}
+.MainPage .DOTSDiv .TopTextLeft .CircleWorkspace {
+  display: flex;
+  font-weight: bold;
+  font-family: Inter;
+  font-size: 25px;
+}
+.MainPage .DOTSDiv .TopTextLeft .BasicPlan {
+  display: flex;
+  font-family: Inter;
+  color: gray;
+  font-size: small;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+  bottom: 50%;
+}
+.MainPage .DOTSDiv .StartFrom {
+  font-family: Inter;
+  color: gray;
+}
+.MainPage .DOTSDiv .PriceLeft {
+  display: inline-flex;
+}
+.MainPage .DOTSDiv .PriceLeft .MainPrice {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 25px;
+}
+.MainPage .DOTSDiv .PriceLeft .Month {
+  font-family: Inter;
+  font-size: small;
+  position: relative;
+  top: 10px;
+}
+.MainPage .DOTSDiv .DarkGrey {
+  color: darkslategray;
+  font-family: Inter;
+  font-size: small;
+  font-weight: 600;
+}
+.MainPage .DOTSDiv .Grey {
+  color: gray;
+  font-family: Inter;
+  font-size: small;
+  font-weight: 600;
 }/*# sourceMappingURL=solutions.css.map */

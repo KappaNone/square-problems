@@ -124,13 +124,17 @@
     }
     .PriceHolder {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-direction: row;
 
         .WorkspaceDiv {
+            display: flex;
             border: 2px solid black;
             border-radius: 20px;
             padding: 15px;
+            flex-direction: column;
+            margin: 20px;
+            width: 500px;
             .TopTextLeft {
                 display: flex;
                 justify-content: space-around;
@@ -143,20 +147,101 @@
                     font-family: Inter;
                     color: gray;
                     font-size: small;
+                    position: relative;
+                    top: 25%;
                 }
+            }
             .StartFrom {
                 font-family: Inter;
                 color: gray;
             }
             .PriceLeft {
-                flex-direction: row;
+                display:inline-flex;
                 .MainPrice {
                     font-family: Inter;
                     font-weight: 900;
                     font-size: 25px;
                 }
+                .Month {
+                    font-family: Inter;
+                    font-size: small;
+                    position:relative;
+                    top: 10px;
+                }
+            }
+            .DarkGrey {
+               color: darkslategray;
+               font-family: Inter;
+               font-size: small;
+               font-weight: 600;
+            }
+            .Grey {
+                color: gray;
+                font-family: Inter;
+                font-size: small;
+                font-weight: 600;
             }
             }
         }
-    }
-}
+        .DOTSDiv {
+            display: flex;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 15px;
+            flex-direction: column;
+            margin: 20px;
+            width: 500px;
+            .TopTextLeft {
+                .CircleWorkspace {
+                    display: flex;
+                    font-weight: bold;
+                    font-family: Inter;
+                    font-size: 25px;
+                
+                }
+                .BasicPlan{
+                    display: flex;
+                    font-family: Inter;
+                    color: gray;
+                    font-size: small;
+                    align-items: center;
+                    justify-content: right;
+                    position: relative;
+                    bottom: 50%;
+                }
+            }
+            .StartFrom {
+                font-family: Inter;
+                color: gray;
+            }
+            .PriceLeft {
+                display:inline-flex;
+                .MainPrice {
+                    font-family: Inter;
+                    font-weight: 900;
+                    font-size: 25px;
+                }
+                .Month {
+                    font-family: Inter;
+                    font-size: small;
+                    position:relative;
+                    top: 10px;
+                }
+            }
+            .DarkGrey {
+               color: darkslategray;
+               font-family: Inter;
+               font-size: small;
+               font-weight: 600;
+            }
+            .Grey {
+                color: gray;
+                font-family: Inter;
+                font-size: small;
+                font-weight: 600;
+            }
+            }
+        }
+        
+
+    
