@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     .MainTextDiv{
         display: flex;
         flex-direction: column;
@@ -43,6 +44,8 @@
             display: inline-flex ;
             align-items: center;
             padding: 2px 20px;
+            margin-top: 20px;
+            margin-bottom: 30px;
             .SliderActive{
             font-family: Inter;
             font-size: 20px;
@@ -60,11 +63,6 @@
             .SliderDiv {
                 border: 2px solid black;
                 border-radius: 30px;
-            }
-            .HiddenButton {
-                background-color: blue;
-                border: 1px solid black;    
-                font-size:0;
             }
                 .switch {
                     --secondary-container: #00084B;
@@ -123,5 +121,42 @@
                     transform: translateX(1.9em);
                 }
             }
+    }
+    .PriceHolder {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+
+        .WorkspaceDiv {
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 15px;
+            .TopTextLeft {
+                display: flex;
+                justify-content: space-around;
+                .CircleWorkspace {
+                    font-weight: bold;
+                    font-family: Inter;
+                    font-size: 25px;
+                }
+                .BasicPlan{
+                    font-family: Inter;
+                    color: gray;
+                    font-size: small;
+                }
+            .StartFrom {
+                font-family: Inter;
+                color: gray;
+            }
+            .PriceLeft {
+                flex-direction: row;
+                .MainPrice {
+                    font-family: Inter;
+                    font-weight: 900;
+                    font-size: 25px;
+                }
+            }
+            }
+        }
     }
 }
