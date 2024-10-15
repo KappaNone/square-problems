@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
 }
 
 main {
@@ -212,4 +212,6 @@ main .contactContainer #contactForm div div:nth-child(2) {
 main .contactContainer #contactForm div div:nth-child(2) label {
   width: 95%;
   text-align: left;
-}/*# sourceMappingURL=contactPage.css.map */
+}
+
+/*# sourceMappingURL=contactPage.css.map */
