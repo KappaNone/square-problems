@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 
-}
 .MainPage {
     display: flex;
     justify-content: center;
@@ -127,7 +122,7 @@
         justify-content: space-around;
         flex-direction: row;
 
-        .WorkspaceDiv {
+        .WorkSpaceDiv {
             display: flex;
             border: 2px solid black;
             border-radius: 20px;
