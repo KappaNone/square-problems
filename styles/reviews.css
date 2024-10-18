@@ -1,5 +1,5 @@
 .layout {
-    margin-top: 225px;
+    margin-top: 50px;
     display:grid;
     grid-template-columns: 1fr 50vw 1fr;
 }
