@@ -9,8 +9,20 @@ $reviews = [
         templates.",
         "rate" => 4.89
     ],
-    [ "name" => "Anton" ],
-    []
+    [ "name" => "Petty Dwarves",
+      "company"=>"Director of Marketing and Communications – Little Cloths ltd.",
+      "text" =>"The ability to quickly communicate and scale collaboration is second
+      to none Users across the globe can receive information, connect and collaborate
+      in real time – answer questions quickly and publicly to avoid duplicative emails.",
+      "rate"=> 4.62
+    ],
+    [ "name" =>"Halluci Absinthe",
+      "company" =>"People Operations Manager – Green Fairy Company",
+      "text" =>"Our onboarding experience has greatly improved thanks to Happeo’s Pages. Instead of having a quick
+       meeting and sending out slides to new employees, we now have an entire Page they can easily refer to.",
+       "rate" => 4.74
+
+    ]
 ];
 
 function render_reviews($reviews) {
