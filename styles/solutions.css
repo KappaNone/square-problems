@@ -134,7 +134,7 @@
 }
 .MainPage .PriceHolder .WorkspaceDiv .TopTextLeft {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .MainPage .PriceHolder .WorkspaceDiv .TopTextLeft .CircleWorkspace {
   font-weight: bold;
@@ -187,13 +187,17 @@
   margin: 20px;
   width: 500px;
 }
-.MainPage .DOTSDiv .TopTextLeft .CircleWorkspace {
+.MainPage .DOTSDiv .TopTextRight {
+  display: flex;
+  justify-content: space-between;
+}
+.MainPage .DOTSDiv .TopTextRight .CircleDOTS {
   display: flex;
   font-weight: bold;
   font-family: Inter;
   font-size: 25px;
 }
-.MainPage .DOTSDiv .TopTextLeft .BasicPlan {
+.MainPage .DOTSDiv .TopTextRight .BasicPlan {
   display: flex;
   font-family: Inter;
   color: gray;

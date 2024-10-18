@@ -137,7 +137,7 @@
             width: 500px;
             .TopTextLeft {
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 .CircleWorkspace {
                     font-weight: bold;
                     font-family: Inter;
@@ -183,7 +183,8 @@
             }
             }
         }
-        .DOTSDiv {
+        .DOTSDiv 
+        {
             display: flex;
             border: 2px solid black;
             border-radius: 20px;
@@ -191,8 +192,12 @@
             flex-direction: column;
             margin: 20px;
             width: 500px;
-            .TopTextLeft {
-                .CircleWorkspace {
+            .TopTextRight 
+            {
+                display: flex;
+                justify-content: space-between;
+                .CircleDOTS 
+                {
                     display: flex;
                     font-weight: bold;
                     font-family: Inter;
