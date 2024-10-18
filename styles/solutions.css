@@ -127,7 +127,7 @@
   display: flex;
   border: 2px solid black;
   border-radius: 20px;
-  padding: 15px;
+  padding: 30px;
   flex-direction: column;
   margin: 20px;
   width: 500px;
@@ -151,6 +151,9 @@
 .MainPage .PriceHolder .WorkspaceDiv .StartFrom {
   font-family: Inter;
   color: gray;
+  font-size: 15px;
+  padding-top: 30px;
+  font-weight: 900;
 }
 .MainPage .PriceHolder .WorkspaceDiv .PriceLeft {
   display: inline-flex;
@@ -158,13 +161,19 @@
 .MainPage .PriceHolder .WorkspaceDiv .PriceLeft .MainPrice {
   font-family: Inter;
   font-weight: 900;
-  font-size: 25px;
+  font-size: 70px;
+}
+.MainPage .PriceHolder .WorkspaceDiv .PriceLeft .EuroSign {
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+  bottom: 50%;
 }
 .MainPage .PriceHolder .WorkspaceDiv .PriceLeft .Month {
   font-family: Inter;
-  font-size: small;
+  font-size: 25px;
   position: relative;
-  top: 10px;
+  top: 50%;
 }
 .MainPage .PriceHolder .WorkspaceDiv .DarkGrey {
   color: darkslategray;
@@ -182,7 +191,7 @@
   display: flex;
   border: 2px solid black;
   border-radius: 20px;
-  padding: 15px;
+  padding: 30px;
   flex-direction: column;
   margin: 20px;
   width: 500px;
@@ -210,6 +219,9 @@
 .MainPage .DOTSDiv .StartFrom {
   font-family: Inter;
   color: gray;
+  font-size: 15px;
+  padding-top: 30px;
+  font-weight: 900;
 }
 .MainPage .DOTSDiv .PriceLeft {
   display: inline-flex;
@@ -217,13 +229,19 @@
 .MainPage .DOTSDiv .PriceLeft .MainPrice {
   font-family: Inter;
   font-weight: 900;
-  font-size: 25px;
+  font-size: 70px;
+}
+.MainPage .DOTSDiv .PriceLeft .EuroSign {
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+  bottom: 50%;
 }
 .MainPage .DOTSDiv .PriceLeft .Month {
   font-family: Inter;
-  font-size: small;
+  font-size: 25px;
   position: relative;
-  top: 10px;
+  top: 50%;
 }
 .MainPage .DOTSDiv .DarkGrey {
   color: darkslategray;
@@ -236,4 +254,60 @@
   font-family: Inter;
   font-size: small;
   font-weight: 600;
+}
+
+.DropDownHolder {
+  display: flex;
+  flex-direction: column;
+}
+.DropDownHolder .DropDown {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.DropDownHolder .DropDown .PriceDropDown {
+  font-size: 18px;
+  border: 0;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #D8D8D8;
+}
+.DropDownHolder .DropDown .DropDownText {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-weight: 900;
+  padding-left: 10px;
+}
+
+.BuyButton {
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: #00084B;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-left: 0px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.BuyButton:hover {
+  background-color: #00090B;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.ContactButton {
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: white;
+  border: black solid 2px;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+.ContactButton:hover {
+  background-color: lightgray;
+  transition: 0.3s;
+  cursor: pointer;
 }/*# sourceMappingURL=solutions.css.map */
