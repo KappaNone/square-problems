@@ -21,5 +21,6 @@
       </div>
       <img src="img/mainSectionImg.png" alt="main-image" class="main-img" />
     </main>
+    <script src="./js/hamburgerMenu.js"></script>
   </body>
 </html>
