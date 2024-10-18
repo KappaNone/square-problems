@@ -1,3 +1,4 @@
+<?php include_once("header.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,31 +10,7 @@
     <link rel="stylesheet" href="styles/contactPage.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="headerbuttonbox">
-        <a href="index.html"
-          ><img src="img/circlesolutions.png" alt="logo" class="headerlogo"
-        /></a>
-        <a href="index.html"><button class="headerbutton">Home</button></a>
-        <a href="solutions.html"><button class="headerbutton">Solutions</button></a>
-        <a href="contact.html"><button class="headerbutton active">Contact</button></a>
-        <a href="reviews.html"><button class="headerbutton">Customer Reviews</button></a>
-        <a href="faq.html"><button class="headerbutton">FAQ</button></a>
-      </div>
-      <div class="headerright">
-        <div class="dropdown">
-          <button class="dropbtn">
-            EN <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">NL</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-          </div>
-        </div>
-        <button class="Demobutton">Try Demo</button>
-      </div>
-    </div>
+    <?php render_header(); ?>
     <main>
       <div class="mediaAndMapContainer">
         <div class="media">
