@@ -7,8 +7,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./styles/global.css" type="text/css">
         <link rel="stylesheet" href="./styles/solutions.css" type="text/css"> 
-        <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
-        <link href="https://fontawesome.com/icons/euro-sign?s=solid" rel="stylesheet">
         <script src="./js/radioslider.js"></script>
     </head>
     <body>
