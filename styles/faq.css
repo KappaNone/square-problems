@@ -37,7 +37,7 @@ h2
     border-radius: 12px;
     padding: 15px;
     margin-bottom: 20px;
-    box-shadow: 5px 5px 5px dimgray;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .accordion-item input[type="checkbox"] 
@@ -88,3 +88,27 @@ h2
 {
     margin: 0;
 }
+.submit_question
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-weight: bolder;
+
+}
+#question
+{
+    border-radius: 15px;
+    width: 50vw;
+    border-width: medium;
+}
+input
+{
+    width: 20vw;
+    font-family: 'inter', sans-serif;
+    font-weight: bolder;
+    border-width: medium;
+    border-radius: 15px;
+}
+

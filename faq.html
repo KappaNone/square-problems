@@ -16,18 +16,18 @@
       <h2>Frequently Asked Questions</h2> 
         <h1><b>Find Answers</b></h1>
         
-      <div class="accordion-item">
-         <input type="checkbox" id="item1" >
-         <label for="item1"> What is an intranet?
+       <div class="accordion-item">
+           <input type="checkbox" id="item1" >
+           <label for="item1"> What is an intranet?
              <span class="icon"><i class="fa-solid fa-circle-arrow-down"></i></span>
-          </label>
-            <div class="content">
+           </label>
+           <div class="content">
               <p>Intranet means a closed network that resides on a local network. An intranet acts like a website that only
                authorized users can access and is generally used by organizations who wish to share knowledge,
                internal communications, and information with their colleagues.
               </p> 
-             </div>
-         </div>
+           </div>
+        </div>
         
         <div class="accordion-item">
             <input type="checkbox" id="item2" >
@@ -117,7 +117,13 @@
              </p>
            </div>
         </div>
-
+      <div class="submit_question">
+         <form action="submit_question.php" method="post">
+           <label for="question">Have a question? Ask us:</label><br>
+           <textarea name="question" id="question" rows="4" cols="50" required></textarea><br>
+           <input type="submit" value="Submit">
+         </form>
+       </div>
     </div>
     
 </body>
