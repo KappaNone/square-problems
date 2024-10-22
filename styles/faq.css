@@ -1,18 +1,12 @@
-body
-{
-    margin:0px;
-    background-color:white;
-    display:grid;
-    grid-template-columns: 1fr 5fr 1fr;
+body > div {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
+
 .main
 {    
-    margin-top: 150px;
+    margin-top: 50px;
     grid-column:2/3;
-}
-*
-{
-font-family: 'inter', sans-serif;
 }
 
 h1
@@ -20,7 +14,7 @@ h1
     font-size: 60px;
     align-content: center;
     text-align: center; 
-    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 h2
