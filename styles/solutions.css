@@ -1,0 +1,307 @@
+.MainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.MainPage .MainTextDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.MainPage .MainTextDiv .CircleSubPlans {
+  display: flex;
+  border: solid black 2px;
+  border-radius: 30px;
+  font-size: 1.8rem;
+  font-family: Inter;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  width: fit-content;
+  height: fit-content;
+}
+.MainPage .MainTextDiv .MainText {
+  display: flex;
+  font-family: Inter;
+  font-size: 70px;
+  align-items: center;
+  width: 800px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+.MainPage .MainTextDiv .PersonButton {
+  border: 2px solid black;
+  border-radius: 25px;
+  justify-content: space-evenly;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.MainPage .MainTextDiv .PersonButton .SliderActive {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 0px;
+  margin-right: 15px;
+}
+.MainPage .MainTextDiv .PersonButton .SliderNotActive {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+.MainPage .MainTextDiv .PersonButton .SliderDiv {
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.MainPage .MainTextDiv .PersonButton .switch {
+  --secondary-container: #00084B;
+  --primary: white;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.7em;
+  height: 1.8em;
+}
+.MainPage .MainTextDiv .PersonButton .switch input {
+  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.MainPage .MainTextDiv .PersonButton .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transition: 0.2s;
+  border-radius: 30px;
+}
+.MainPage .MainTextDiv .PersonButton .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.2em;
+  bottom: 0.2em;
+  background-color: #00084b;
+  transition: 0.4s;
+}
+.MainPage .MainTextDiv .PersonButton input:checked + .slider::before {
+  background-color: var(--primary);
+}
+.MainPage .MainTextDiv .PersonButton input:checked + .slider {
+  background-color: var(--secondary-container);
+}
+.MainPage .MainTextDiv .PersonButton input:focus + .slider {
+  box-shadow: 0 0 1px var(--secondary-container);
+}
+.MainPage .MainTextDiv .PersonButton input:checked + .slider:before {
+  transform: translateX(1.9em);
+}
+.MainPage .PriceHolder {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.MainPage .PriceHolder .WorkSpaceDiv {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 30px;
+  flex-direction: column;
+  margin: 20px;
+  width: 500px;
+}
+.MainPage .PriceHolder .WorkSpaceDiv .TopTextLeft {
+  display: flex;
+  justify-content: space-between;
+}
+.MainPage .PriceHolder .WorkSpaceDiv .TopTextLeft .CircleWorkspace {
+  font-weight: bold;
+  font-family: Inter;
+  font-size: 25px;
+}
+.MainPage .PriceHolder .WorkSpaceDiv .TopTextLeft .BasicPlan {
+  font-family: Inter;
+  color: gray;
+  font-size: small;
+  position: relative;
+  top: 25%;
+}
+.MainPage .PriceHolder .WorkSpaceDiv .StartFrom {
+  font-family: Inter;
+  color: gray;
+  font-size: 15px;
+  padding-top: 30px;
+  font-weight: 900;
+}
+.MainPage .PriceHolder .WorkSpaceDiv .PriceLeft {
+  display: inline-flex;
+}
+.MainPage .PriceHolder .WorkSpaceDiv .PriceLeft .MainPrice {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 70px;
+}
+.MainPage .PriceHolder .WorkSpaceDiv .PriceLeft .EuroSign {
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+  bottom: 50%;
+}
+.MainPage .PriceHolder .WorkSpaceDiv .PriceLeft .Month {
+  font-family: Inter;
+  font-size: 25px;
+  position: relative;
+  top: 50%;
+}
+.MainPage .PriceHolder .WorkSpaceDiv .DarkGrey {
+  color: darkslategray;
+  font-family: Inter;
+  font-size: small;
+  font-weight: 600;
+}
+.MainPage .PriceHolder .WorkSpaceDiv .Grey {
+  color: gray;
+  font-family: Inter;
+  font-size: small;
+  font-weight: 600;
+}
+.MainPage .DOTSDiv {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 30px;
+  flex-direction: column;
+  margin: 20px;
+  width: 500px;
+}
+.MainPage .DOTSDiv .TopTextRight {
+  display: flex;
+  justify-content: space-between;
+}
+.MainPage .DOTSDiv .TopTextRight .CircleDOTS {
+  display: flex;
+  font-weight: bold;
+  font-family: Inter;
+  font-size: 25px;
+}
+.MainPage .DOTSDiv .TopTextRight .BasicPlan {
+  display: flex;
+  font-family: Inter;
+  color: gray;
+  font-size: small;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+  bottom: 50%;
+}
+.MainPage .DOTSDiv .StartFrom {
+  font-family: Inter;
+  color: gray;
+  font-size: 15px;
+  padding-top: 30px;
+  font-weight: 900;
+}
+.MainPage .DOTSDiv .PriceLeft {
+  display: inline-flex;
+}
+.MainPage .DOTSDiv .PriceLeft .MainPrice {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 70px;
+}
+.MainPage .DOTSDiv .PriceLeft .EuroSign {
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+  bottom: 50%;
+}
+.MainPage .DOTSDiv .PriceLeft .Month {
+  font-family: Inter;
+  font-size: 25px;
+  position: relative;
+  top: 50%;
+}
+.MainPage .DOTSDiv .DarkGrey {
+  color: darkslategray;
+  font-family: Inter;
+  font-size: small;
+  font-weight: 600;
+}
+.MainPage .DOTSDiv .Grey {
+  color: gray;
+  font-family: Inter;
+  font-size: small;
+  font-weight: 600;
+}
+
+.DropDownHolder {
+  display: flex;
+  flex-direction: column;
+}
+.DropDownHolder .DropDown {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.DropDownHolder .DropDown .PriceDropDown {
+  font-size: 18px;
+  border: 0;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #D8D8D8;
+}
+.DropDownHolder .DropDown .DropDownText {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-weight: 900;
+  padding-left: 10px;
+}
+
+.BuyButton {
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: #00084B;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-left: 0px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.BuyButton:hover {
+  background-color: #00090B;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.ContactButton {
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: white;
+  border: black solid 2px;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+.ContactButton:hover {
+  background-color: lightgray;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=solutions.css.map */
