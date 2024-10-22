@@ -5,8 +5,9 @@ function toggleHamburgerMenu() {
   if (links.style.display == "unset") {
     links.style.display = "none";
   } else {
-    links.style.display = "none";
+    links.style.display = "unset";
   }
+  console.log(links.style.display)
 }
 
 button.addEventListener("click", () => {

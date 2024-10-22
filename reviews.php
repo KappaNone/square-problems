@@ -53,7 +53,7 @@ function render_reviews($reviews) {
                         </div>
                     </div>
                     <div class="review-text">
-                        "' . "$text" .'
+                        "' . "$text" .'"
                     </div>
             </div>
         ';

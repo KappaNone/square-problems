@@ -48,5 +48,6 @@ function render_header() {
         </div>
         <button class="Demobutton">Try Demo</button>
       </div>
-    </div>';
+    </div>
+    <script src="js/hamburgerMenu.js"></script>';
 }
