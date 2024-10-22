@@ -1,3 +1,4 @@
+<?php include_once("header.php"); ?>
 <!DOCTYPE html>
     <html>
         <head>
@@ -8,27 +9,9 @@
             <link href="https://fontawesome.com/icons/euro-sign?s=solid" rel="stylesheet">
         </head>
         <body>
-            <div class="header">
-                <div class="headerbuttonbox">
-                    <img src="img/circlesolutions.png" alt="logo" class="headerlogo">
-                    <a href="index.html">
-                    <button class="headerbutton">Home</button>
-                    </a>
-                    <button class="headerbutton active">Solutions</button>
-                    <button class="headerbutton">Contact</button>
-                    <button class="headerbutton">Customer Reviews</button>
-                    <button class="headerbutton">FAQ</button>
-                </div>
-                <div class="headerright">
-                    <div class="dropdown">
-                        <button class="dropbtn">EN <i class="fa-solid fa-chevron-down"></i></button> 
-                        <div class="dropdown-content">
-                            <a href="#">NL</a>
-                        </div>
-                    </div>
-                    <button class="Demobutton"> Try Demo </button>
-                </div>
-            </div>
+            <?php 
+            render_header()
+            ?>
             <div class="MainPage">  
                 <div class="MainTextDiv">
                     <p class="CircleSubPlans"> Circle Subscription Plans </p>
