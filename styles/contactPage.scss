@@ -8,7 +8,7 @@ body {
 
 main {
   max-width: 1440px;
-  margin: 50px auto;
+  margin: 30px auto;
   .mediaAndMapContainer {
     display: flex;
     justify-content: space-between;
@@ -17,6 +17,9 @@ main {
     @media (max-width: 1400px) {
       flex-direction: column;
       margin-bottom: 410px;
+    }
+    @media (max-width: 750px) {
+      margin-bottom: 340px;
     }
     .media {
       padding: 30px;
@@ -32,10 +35,17 @@ main {
         margin-bottom: 30px;
         height: 400px;
       }
+      @media (max-width: 750px) {
+        width: 90vw;
+        margin-bottom: 15px;
+      }
       h2 {
         font-size: 64px;
         @media (max-width: 1400px) {
           margin-top: 10px;
+        }
+        @media (max-width: 750px) {
+          font-size: 48px;
         }
       }
       form {
@@ -45,6 +55,10 @@ main {
         align-items: center;
         @media (max-width: 1400px) {
           margin: 10px 0;
+        }
+        @media (max-width: 750px) {
+          height: 50px;
+          margin-bottom: 0;
         }
         input[type='email'] {
           height: 100%;
@@ -57,6 +71,11 @@ main {
           &:focus {
             outline: none;
           }
+          @media (max-width: 750px) {
+            width: 50vw;
+            padding: 0 16px;
+            font-size: 20px;
+          }
         }
         input[type='submit'] {
           height: 100%;
@@ -67,6 +86,11 @@ main {
           padding: 0 25px;
           margin-left: 12px;
           cursor: pointer;
+          @media (max-width: 750px) {
+            padding: 0 12px;
+            font-size: 22px;
+            margin-left: 6px;
+          }
         }
       }
       span {
@@ -74,6 +98,9 @@ main {
         font-size: 24px;
         @media (max-width: 1400px) {
           margin: 10px 0;
+        }
+        @media (max-width: 750px) {
+          font-size: 20px;
         }
       }
       .socials {
@@ -92,9 +119,16 @@ main {
           height: 67px;
           width: 67px;
           text-decoration: none;
+          @media (max-width: 750px) {
+            height: 48px;
+            width: 48px;
+          }
           i {
             color: #000;
             font-size: 30px;
+            @media (max-width: 750px) {
+              font-size: 24px;
+            }
           }
         }
       }
@@ -107,8 +141,16 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 670px;
+      @media (max-width: 750px) {
+        width: 90vw;
+      }
       iframe {
         border-radius: 24px;
+      }
+      a {
+        // display: none;
+        // font-size: 0px;
       }
     }
   }
@@ -126,15 +168,28 @@ main {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+      @media (max-width: 750px) {
+        width: 90vw;
+      }
       h2 {
         font-size: 64px;
         margin-bottom: 30px;
+        @media (max-width: 750px) {
+          font-size: 30px;
+          margin-bottom: 20px;
+        }
       }
       .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 20px;
+        span,
+        b {
+          @media (max-width: 750px) {
+            font-size: 14px;
+          }
+        }
         span {
           display: block;
           opacity: 0.5;
@@ -150,7 +205,12 @@ main {
       display: flex;
       flex-direction: column;
       width: 700px;
-
+      @media (max-width: 1400px) {
+        margin-top: 25px;
+      }
+      @media (max-width: 750px) {
+        width: 90vw;
+      }
       input,
       textarea {
         border-radius: 8px;
