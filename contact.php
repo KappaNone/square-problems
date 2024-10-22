@@ -1,3 +1,4 @@
+<?php include_once("header.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="styles/contactPage.css" />
   </head>
   <body>
+    <?php render_header(); ?>
     <main>
       <div class="mediaAndMapContainer">
         <div class="media">

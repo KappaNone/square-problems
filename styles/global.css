@@ -1,14 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 .header {
   display: flex;
   width: 100%;
-  height: -moz-max-content;
-  height: max-content;
+  height: 88px;
   margin: auto;
   justify-content: space-between;
   border: none;
@@ -20,20 +21,54 @@
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 1100px) {
+  .header .headerbuttonbox {
+    flex-direction: row-reverse;
+  }
+}
+.header .headerbuttonbox .hamburgermenu {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .header .headerbuttonbox .hamburgermenu {
+    display: block;
+  }
+}
+.header .headerbuttonbox .hamburger-icon {
+  width: 25px;
+}
+.header .headerbuttonbox .hamburger-btn {
+  margin-left: 25px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+  .header .headerbuttonbox .headerlinks {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background-color: black;
+  }
+  .header .headerbuttonbox .headerlinks * {
+    text-decoration: none;
+    display: block;
+    color: white;
+  }
+}
 .header .headerbuttonbox .headerbutton {
   padding: 0;
   border: none;
   background: none;
   margin: 20px;
   font-size: 1.3rem;
-  height: -moz-max-content;
   height: max-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .header .headerbuttonbox .headerbutton:hover {
-  -webkit-text-decoration: underline darkslategray;
-          text-decoration: underline darkslategray;
+  text-decoration: underline darkslategray;
 }
 .header .headerbuttonbox .active {
   text-decoration: underline;
@@ -93,7 +128,7 @@
   background-color: #f1f1f1;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   font-size: 1.3rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Inter, sans-serif;
   width: 100%;
 }
 .header .headerright .dropdown-content a {
@@ -104,4 +139,6 @@
 }
 .header .headerright .dropdown-content a:hover {
   background-color: #ddd;
-}/*# sourceMappingURL=global.css.map */
+}
+
+/*# sourceMappingURL=global.css.map */
