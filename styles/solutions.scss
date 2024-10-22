@@ -1,4 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+}
 .MainPage {
     display: flex;
     justify-content: center;
@@ -28,7 +33,7 @@
             font-size: 70px;
             align-items: center;
             width: 800px;
-            font-weight: bold;
+            font-weight: 900;
             margin-top: 50px;
             margin-bottom: 0px;
         }
@@ -55,18 +60,26 @@
             margin-left: 15px;
             margin-right: 0px;
             }
-            .SliderDiv {
-                border: 2px solid black;
-                border-radius: 30px;
+            .SliderDiv
+            {
+                display: flex;
+                align-items: center;
             }
+            .form 
+                {
+                    display: flex;
+                    align-items: center;
+                }
                 .switch {
                     --secondary-container: #00084B;
                     --primary: white;
                     font-size: 17px;
                     position: relative;
                     display: inline-block;
-                    width: 3.7em;
-                    height: 1.8em;
+                    width: 3.85em;
+                    height: 1.95em;
+                    border: 2px solid black;
+                    border-radius: 30px;
                 }
                 
                 .switch input {
@@ -122,7 +135,7 @@
         justify-content: space-around;
         flex-direction: row;
 
-        .WorkSpaceDiv {
+        .WorkspaceDiv {
             display: flex;
             border: 2px solid black;
             border-radius: 20px;
@@ -272,7 +285,7 @@
             flex-direction: row;
             padding-top: 10px;
             padding-bottom: 10px;
-            .PriceDropDown 
+            .DrpDwnPrice
             {
                 font-size: 18px;
                 border: 0;
@@ -313,6 +326,7 @@
         transition: .3s;
         &:hover {background-color: lightgray; transition: .3s; cursor: pointer;}
     }
+    
         
 
     
