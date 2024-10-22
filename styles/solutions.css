@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .MainPage {
   display: flex;
   justify-content: center;
@@ -20,7 +26,9 @@
   padding: 10px 20px;
   margin-top: 20px;
   margin-bottom: 0px;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .MainPage .MainTextDiv .MainText {
@@ -29,7 +37,7 @@
   font-size: 70px;
   align-items: center;
   width: 800px;
-  font-weight: bold;
+  font-weight: 900;
   margin-top: 50px;
   margin-bottom: 0px;
 }
@@ -58,8 +66,12 @@
   margin-right: 0px;
 }
 .MainPage .MainTextDiv .PersonButton .SliderDiv {
-  border: 2px solid black;
-  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+.MainPage .MainTextDiv .PersonButton .form {
+  display: flex;
+  align-items: center;
 }
 .MainPage .MainTextDiv .PersonButton .switch {
   --secondary-container: #00084B;
@@ -67,8 +79,10 @@
   font-size: 17px;
   position: relative;
   display: inline-block;
-  width: 3.7em;
-  height: 1.8em;
+  width: 3.85em;
+  height: 1.95em;
+  border: 2px solid black;
+  border-radius: 30px;
 }
 .MainPage .MainTextDiv .PersonButton .switch input {
   display: none;
@@ -115,7 +129,7 @@
   justify-content: space-around;
   flex-direction: row;
 }
-.MainPage .PriceHolder .WorkSpaceDiv {
+.MainPage .PriceHolder .WorkspaceDiv {
   display: flex;
   border: 2px solid black;
   border-radius: 20px;
@@ -124,56 +138,56 @@
   margin: 20px;
   width: 500px;
 }
-.MainPage .PriceHolder .WorkSpaceDiv .TopTextLeft {
+.MainPage .PriceHolder .WorkspaceDiv .TopTextLeft {
   display: flex;
   justify-content: space-between;
 }
-.MainPage .PriceHolder .WorkSpaceDiv .TopTextLeft .CircleWorkspace {
+.MainPage .PriceHolder .WorkspaceDiv .TopTextLeft .CircleWorkspace {
   font-weight: bold;
   font-family: Inter;
   font-size: 25px;
 }
-.MainPage .PriceHolder .WorkSpaceDiv .TopTextLeft .BasicPlan {
+.MainPage .PriceHolder .WorkspaceDiv .TopTextLeft .BasicPlan {
   font-family: Inter;
   color: gray;
   font-size: small;
   position: relative;
   top: 25%;
 }
-.MainPage .PriceHolder .WorkSpaceDiv .StartFrom {
+.MainPage .PriceHolder .WorkspaceDiv .StartFrom {
   font-family: Inter;
   color: gray;
   font-size: 15px;
   padding-top: 30px;
   font-weight: 900;
 }
-.MainPage .PriceHolder .WorkSpaceDiv .PriceLeft {
+.MainPage .PriceHolder .WorkspaceDiv .PriceLeft {
   display: inline-flex;
 }
-.MainPage .PriceHolder .WorkSpaceDiv .PriceLeft .MainPrice {
+.MainPage .PriceHolder .WorkspaceDiv .PriceLeft .MainPrice {
   font-family: Inter;
   font-weight: 900;
   font-size: 70px;
 }
-.MainPage .PriceHolder .WorkSpaceDiv .PriceLeft .EuroSign {
+.MainPage .PriceHolder .WorkspaceDiv .PriceLeft .EuroSign {
   font-size: 20px;
   font-weight: 900;
   position: relative;
   bottom: 50%;
 }
-.MainPage .PriceHolder .WorkSpaceDiv .PriceLeft .Month {
+.MainPage .PriceHolder .WorkspaceDiv .PriceLeft .Month {
   font-family: Inter;
   font-size: 25px;
   position: relative;
   top: 50%;
 }
-.MainPage .PriceHolder .WorkSpaceDiv .DarkGrey {
+.MainPage .PriceHolder .WorkspaceDiv .DarkGrey {
   color: darkslategray;
   font-family: Inter;
   font-size: small;
   font-weight: 600;
 }
-.MainPage .PriceHolder .WorkSpaceDiv .Grey {
+.MainPage .PriceHolder .WorkspaceDiv .Grey {
   color: gray;
   font-family: Inter;
   font-size: small;
@@ -258,7 +272,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.DropDownHolder .DropDown .PriceDropDown {
+.DropDownHolder .DropDown .DrpDwnPrice {
   font-size: 18px;
   border: 0;
   border-radius: 8px;
@@ -302,6 +316,4 @@
   background-color: lightgray;
   transition: 0.3s;
   cursor: pointer;
-}
-
-/*# sourceMappingURL=solutions.css.map */
+}/*# sourceMappingURL=solutions.css.map */
