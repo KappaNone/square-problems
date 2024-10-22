@@ -2,12 +2,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <t>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/global.css" type="text/css" />
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
-  </head>
+    <title>Circle Solutions | Home</title>
+  </t>
   <body>
     <?php render_header(); ?>
     <main class="main">

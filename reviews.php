@@ -68,7 +68,7 @@ function render_reviews($reviews) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/reviews.css" type="text/css">
-    <title>Reviews</title>
+    <title>Circle Solutions | Reviews</title>
 </head>
 
 <body>

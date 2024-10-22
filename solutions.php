@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./styles/global.css" type="text/css">
         <link rel="stylesheet" href="./styles/solutions.css" type="text/css"> 
         <script src="./js/radioslider.js"></script>
+        <title>Circle Solutions | Solutions</title>
     </head>
     <body>
        <?php render_header(); ?>
