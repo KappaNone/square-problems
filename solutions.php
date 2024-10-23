@@ -68,7 +68,7 @@
                     <div class="DOTSDiv">
                         <div class="TopTextRight">
                             <p class="CircleDOTS">Circle D.O.T.S.</p>
-                            <p class="BasicPlan">proffesional plan</p>
+                            <p class="BasicPlan">professional plan</p>
                         </div>
                         <p class="StartFrom">Starting From</p>
                         <div class="PriceLeft"> 
