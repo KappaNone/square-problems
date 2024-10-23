@@ -37,14 +37,10 @@ function render_header() {
       </div>
       <div class="headerright">
         <div class="dropdown">
-          <button class="dropbtn">
-            EN <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">NL</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-          </div>
+        <form method="post"> 
+          <button class="dropbtn" name="langbtn" value"langbtn" type="submit" id="langbtn"> EN </button>
+        </form>
+  
         </div>
         <button class="Demobutton">Try Demo</button>
       </div>

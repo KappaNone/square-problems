@@ -13,3 +13,7 @@ function toggleHamburgerMenu() {
 button.addEventListener("click", () => {
   toggleHamburgerMenu();
 })
+
+function alerttest() {
+  alert("test");
+}

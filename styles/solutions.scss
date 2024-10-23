@@ -9,8 +9,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #f3f3f3;
     border-radius: 25px;
+    background-color: white;
     padding: 35px;
     margin: 35px;
     .MainTextDiv{
@@ -214,7 +214,6 @@
             flex-direction: column;
             margin: 20px;
             width: 500px;
-            background-image: url(../img/backimgworkspace.jpg);
             .TopTextRight 
             {
                 display: flex;

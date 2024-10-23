@@ -64,11 +64,14 @@
   background: none;
   margin: 20px;
   font-size: 1.3rem;
+  height: -moz-max-content;
   height: max-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .header .headerbuttonbox .headerbutton:hover {
-  text-decoration: underline darkslategray;
+  -webkit-text-decoration: underline darkslategray;
+          text-decoration: underline darkslategray;
 }
 .header .headerbuttonbox .active {
   text-decoration: underline;
@@ -139,6 +142,4 @@
 }
 .header .headerright .dropdown-content a:hover {
   background-color: #ddd;
-}
-
-/*# sourceMappingURL=global.css.map */
+}/*# sourceMappingURL=global.css.map */
