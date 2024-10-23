@@ -201,6 +201,7 @@
   flex-direction: column;
   margin: 20px;
   width: 500px;
+  background-image: url(../img/backimgworkspace.jpg);
 }
 .MainPage .DOTSDiv .TopTextRight {
   display: flex;

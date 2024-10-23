@@ -45,7 +45,6 @@
                                 <button class="DrpDwnPrice" id="drpDwnPrice"><i class="fa-solid fa-chevron-down" id="drop1"></i></button>
                                 <p class="DropDownText">Improved App Management</p>
                             </div>
-                            <p class="drop1text"></p>
                             <div class="DropDown">
                                 <button class="DrpDwnPrice"><i class="fa-solid fa-chevron-down"></i></button>
                                 <p class="DropDownText">Better Display Of Communication And Information</p>

@@ -14,20 +14,6 @@ solutions.addEventListener("click", () => {
     }  
 })
 
-const dropdown = document.getElementById('drpDwnPrice');
-let dropactive = false;
-
-dropdown.addEventListener("click", () => {
-    alert("hallo");
-    if (dropactive == false) {
-        document.getElementById("drop1text").innerHTML = "lorem ipsum";
-        dropactive = true;
-    } else {
-        document.getElementById("drop1text").innerHTML = "";
-        dropactive = false;
-    }
-})
-
 
 
 
