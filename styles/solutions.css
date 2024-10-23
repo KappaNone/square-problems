@@ -272,14 +272,17 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.DropDownHolder .DropDown .DrpDwnPrice {
+.DropDownHolder .DrpDwnPrice {
   font-size: 18px;
   border: 0;
   border-radius: 8px;
   padding: 5px;
   background-color: #D8D8D8;
 }
-.DropDownHolder .DropDown .DropDownText {
+.DropDownHolder .DrpDwnPrice:hover {
+  background-color: gray;
+}
+.DropDownHolder .DropDownText {
   display: flex;
   align-items: center;
   font-family: Inter;
