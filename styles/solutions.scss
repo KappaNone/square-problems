@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 
-}
 .MainPage {
     display: flex;
     justify-content: center;
@@ -37,6 +32,7 @@
             font-size: 70px;
             align-items: center;
             width: 800px;
+            height: 100%;
             font-weight: 900;
             margin-top: 50px;
             margin-bottom: 0px;
