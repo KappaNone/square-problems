@@ -5,7 +5,12 @@ include_once("englishfiles.php");
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="styles/global.css" type="text/css">
     <link rel="stylesheet" href="styles/solutions.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
@@ -128,7 +133,6 @@ include_once("englishfiles.php");
                         <p>Leverage data-driven insights to make informed decisions that enhance your business performance. Our analytics tools help you track key performance indicators, monitor employee engagement, and optimize processes for better results.</p>
                     </div>
                 </div>
-
                 <div class="BottomButtons">
                     <button class="BuyButton">Buy Now</button>
                     <a href="contact.php">
@@ -137,6 +141,7 @@ include_once("englishfiles.php");
                 </div>
             </div>
         </div>
+
         <script src="./js/textDropDown.js"></script>
         <script src="./js/radioslider.js"></script>
 </body>

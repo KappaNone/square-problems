@@ -137,13 +137,21 @@
           </p>
         </div>
       </div>
+      <?php
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+          echo "<p class='thanks'>Bedankt voor uw vraag!</p>"; 
+        } else {
+      ?>
+
       <div class="submit_question">
-        <form action="submit_question.php" method="post">
+        <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
           <label for="question">Een vraag? stel het ons:</label><br>
           <textarea name="question" id="question" rows="4" cols="50" required></textarea><br>
-          <input type="submit" value="Sturen">
+          <input type="submit">
         </form>
       </div>
+
+      <?php } ?>
     </div>
   </div>
 
