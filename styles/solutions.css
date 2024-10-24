@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .MainPage {
   display: flex;
   justify-content: center;
@@ -33,7 +39,6 @@
   font-size: 70px;
   align-items: center;
   width: 800px;
-  height: 100%;
   font-weight: 900;
   margin-top: 50px;
   margin-bottom: 0px;
@@ -126,11 +131,6 @@
   justify-content: space-around;
   flex-direction: row;
   align-items: flex-start;
-}
-@media screen and (max-width: 1100px) {
-  .MainPage .PriceHolder {
-    flex-direction: column;
-  }
 }
 @media screen and (max-width: 1100px) {
   .MainPage .PriceHolder {
