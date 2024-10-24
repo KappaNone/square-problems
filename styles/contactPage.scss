@@ -253,3 +253,21 @@ main {
     }
   }
 }
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 382px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 382px;
+}
+
+.gmap_iframe {
+  height: 382px !important;
+}
