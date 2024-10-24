@@ -30,7 +30,9 @@
   padding: 10px 20px;
   margin-top: 20px;
   margin-bottom: 0px;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .MainPage .MainTextDiv .MainText {
@@ -342,6 +344,4 @@
   background-color: lightgray;
   transition: 0.3s;
   cursor: pointer;
-}
-
-/*# sourceMappingURL=solutions.css.map */
+}/*# sourceMappingURL=solutions.css.map */
