@@ -1,17 +1,17 @@
 <?php 
 function render_dutch_header() {
   $pages = [
-    "Home" => "index.php",
-    "Solutions" => "solutions.php",
+    "Thuis" => "index.php",
+    "Oplossingen" => "solutions.php",
     "Contact" => "contact.php",
-    "Customer Reviews" => "reviews.php",
+    "Gebruiker Reviews" => "reviews.php",
     "FAQ" => "faq.php"
   ];
   
   echo '
     <div class="header">
       <div class="headerbuttonbox">
-        <a href="' . $pages["Home"] . '">
+        <a href="' . $pages["Thuis"] . '">
           <img src="img/circlesolutions.png" alt="logo" class="headerlogo"/>
           </a>
         <div class="hamburgermenu">
@@ -41,7 +41,7 @@ function render_dutch_header() {
             NL <i class="fa-solid fa-chevron-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="../solutions.php">EN</a>
+            <a href="../' . basename($_SERVER["PHP_SELF"]) . '">EN</a>
           </div>
         </div>
         <button class="Demobutton">Try Demo</button>

@@ -17,7 +17,7 @@
           <h2>Bezoek ons 👋</h2>
           <form action="" id="newsletterForm">
             <input type="email" name="newsletterEmail" id="newsletterEmail" placeholder="Vul uw E-mail in" required />
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Sturen" />
           </form>
           <span>of onze sociale media</span>
           <div class="socials">

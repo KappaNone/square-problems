@@ -1,4 +1,4 @@
-<?php include_once("header.php"); ?>
+<?php include_once("dutch_header.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <?php render_header(); ?>
+  <?php render_dutch_header(); ?>
   <div>
 
     <div class="main">
@@ -24,89 +24,89 @@
   
       <div class="accordion-item">
         <input type="checkbox" id="item1">
-        <label for="item1"> What is an intranet?
+        <label for="item1"> Wat is een intranet?
           <span class="icon"><i class="fa-solid fa-circle-arrow-down"></i></span>
         </label>
         <div class="content">
-          <p>Intranet means a closed network that resides on a local network. An intranet acts like a website that only
-            authorized users can access and is generally used by organizations who wish to share knowledge,
-            internal communications, and information with their colleagues.
+          <p>Intranet betekent een gesloten netwerk dat zich op een lokaal netwerk bevindt. Een intranet fungeert als een website die alleen
+            geautoriseerde gebruikers hebben toegang tot en worden doorgaans gebruikt door organisaties die kennis willen delen,
+            interne communicatie en informatie met hun collega's.
           </p>
         </div>
       </div>
   
       <div class="accordion-item">
         <input type="checkbox" id="item2">
-        <label for="item2">What is the difference between the internet and an intranet?
+        <label for="item2">Wat is het verschil tussen internet en intranet?
           <span class="icon"><i class="fa-solid fa-circle-arrow-down"></i></span>
         </label>
         <div class="content">
-          <p>The main difference between an intranet and the internet is that the former is a closed network, and the
-            latter is a public network. In short, the internet is for all; a company intranet is for a select group of
-            people.
+          <p>Het belangrijkste verschil tussen een intranet en internet is dat het eerste een gesloten netwerk is, en het internet
+            laatste is een openbaar netwerk. Kortom, internet is voor iedereen; een bedrijfsintranet is voor een selecte groep
+            mensen.
           </p>
         </div>
       </div>
   
       <div class="accordion-item">
         <input type="checkbox" id="item3">
-        <label for="item3">What is an intranet and an extranet?
+        <label for="item3">Wat is een intranet en een extranet?
           <span class="icon"><i class="fa-solid fa-circle-arrow-down"></i></span>
         </label>
         <div class="content">
-          <p>An intranet is a closed network designed to allow an organization to share information and corporate
-            communication among its employees. An extranet is similar to an intranet, but allows third-party entry, so
-            vendors or partners can experience full or selected access.
+          <p>Een intranet is een gesloten netwerk dat is ontworpen om een ​​organisatie in staat te stellen informatie en bedrijven te delen
+            communicatie tussen haar medewerkers. Een extranet is vergelijkbaar met een intranet, maar biedt toegang aan derden
+            leveranciers of partners kunnen volledige of geselecteerde toegang ervaren.
           </p>
         </div>
       </div>
   
       <div class="accordion-item">
         <input type="checkbox" id="item4">
-        <label for="item4">What are intranet sites?
+        <label for="item4">Wat zijn intranet sites?
           <span class="icon"><i class="fa-solid fa-circle-arrow-down"></i></span>
         </label>
         <div class="content">
-          <p>Intranet sites are closed internal networks for authorized members of an organization to share information.
-            They act as a company news channel, an internal communications tool, and a collaboration tool.
+          <p>Intranetsites zijn gesloten interne netwerken waar geautoriseerde leden van een organisatie informatie kunnen delen.
+          Ze fungeren als bedrijfsnieuwskanaal, interne communicatietool en samenwerkingstool.
           </p>
         </div>
       </div>
   
       <div class="accordion-item">
         <input type="checkbox" id="item5">
-        <label for="item5">What are intranet applications?
+        <label for="item5">Wat zijn intranet applicaties?
           <span class="icon"><i class="fa-solid fa-circle-arrow-down"></i></span>
         </label>
         <div class="content">
-          <p>Intranet applications are software within an intranet like document publishing, communication tools,
-            broadcasts, etc. These applications allow the user to do a range of activities, for example: publish a blog,
-            connect with a colleague, or run employee surveys.
+          <p>Intranettoepassingen zijn software binnen een intranet, zoals het publiceren van documenten, communicatiemiddelen,
+            uitzendingen, enz. Met deze toepassingen kan de gebruiker een reeks activiteiten uitvoeren, bijvoorbeeld: een blog publiceren,
+            maak contact met een collega of voer enquêtes onder medewerkers uit.
           </p>
         </div>
       </div>
   
       <div class="accordion-item">
         <input type="checkbox" id="item6">
-        <label for="item6">What is an intranet portal?
+        <label for="item6">Wat is een intranet portaal?
           <span class="icon"><i class="fa-solid fa-circle-arrow-down"></i></span>
         </label>
         <div class="content">
-          <p>An intranet portal is the access point to the user's company intranet. It is on the intranet portal where the
-            user can access intranet applications as well as external apps, and information and knowledge that is stored
-            within the intranet itself.
+          <p>Een intranetportaal is het toegangspunt tot het bedrijfsintranet van de gebruiker. Het bevindt zich op het intranetportaal waar de
+            De gebruiker heeft toegang tot intranetapplicaties, maar ook tot externe apps en tot informatie en kennis die is opgeslagen
+            binnen het intranet zelf.
           </p>
         </div>
       </div>
   
       <div class="accordion-item">
         <input type="checkbox" id="item7">
-        <label for="item7">Can an intranet work without the internet?
+        <label for="item7">werkt een intranet zonder internet?
           <span class="icon"><i class="fa-solid fa-circle-arrow-down"></i></span>
         </label>
         <div class="content">
-          <p>Former on-premise company intranets could operate without internet. But for a wide range of reasons, the
-            majority of company intranet applications are now cloud-based, so an internet connection is necessary.
+          <p>Voormalige bedrijfsintranetten zouden zonder internet kunnen functioneren. Maar om een ​​breed scala aan redenen is de
+          De meeste bedrijfsintranetapplicaties zijn nu cloudgebaseerd, dus een internetverbinding is noodzakelijk.
           </p>
         </div>
   
@@ -114,34 +114,34 @@
   
       <div class="accordion-item">
         <input type="checkbox" id="item8">
-        <label for="item8">Can an intranet be accessed remotely?
+        <label for="item8">kan een intranet op afstand beheerd worden?
           <span class="icon"><i class="fa-solid fa-circle-arrow-down"></i></span>
         </label>
         <div class="content">
-          <p>Yes, an intranet can be accessed on a range of devices, regardless of location - all that is required is an
-            internet connection. This is ideal for any organization with dispersed or front-line employees who need
-            communication tools and access to organizational information wherever they are.
+          <p>Ja, een intranet is toegankelijk op een groot aantal apparaten, ongeacht de locatie. Het enige dat nodig is, is een
+            internetverbinding. Dit is ideaal voor elke organisatie met verspreide medewerkers of medewerkers in de frontlinie die dit nodig hebben
+            communicatiemiddelen en toegang tot organisatorische informatie, waar deze zich ook bevinden.
           </p>
         </div>
       </div>
   
       <div class="accordion-item">
         <input type="checkbox" id="item9">
-        <label for="item9">What does an intranet do?
+        <label for="item9">Wat doet een intranet?
           <span class="icon"><i class="fa-solid fa-circle-arrow-down"></i></span>
         </label>
         <div class="content">
-          <p>Offering all types of organizational solutions, intranet software can improve employee engagement, aid
-            communication, and increase collaboration. Modern intranets are now mostly cloud-based which allows global
-            organizations to connect, share knowledge, and broadcast news quickly and easily.
+          <p>Intranetsoftware biedt alle soorten organisatorische oplossingen en kan de betrokkenheid van medewerkers verbeteren
+            communicatie en het vergroten van de samenwerking. Moderne intranetten zijn nu grotendeels cloudgebaseerd, wat wereldwijd mogelijk maakt
+            organisaties om snel en eenvoudig verbinding te maken, kennis te delen en nieuws uit te zenden.
           </p>
         </div>
       </div>
       <div class="submit_question">
         <form action="submit_question.php" method="post">
-          <label for="question">Have a question? Ask us:</label><br>
+          <label for="question">Een vraag? stel het ons:</label><br>
           <textarea name="question" id="question" rows="4" cols="50" required></textarea><br>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Sturen">
         </form>
       </div>
     </div>
