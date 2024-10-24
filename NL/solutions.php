@@ -1,5 +1,4 @@
-<?php include_once("header.php");
-include_once("englishfiles.php");
+<?php include_once("dutch_header.php");
 ?>
 <!DOCTYPE html>
     <html>
@@ -12,56 +11,56 @@ include_once("englishfiles.php");
         </head>
         <body>
             <?php 
-            render_header()
+            render_dutch_header();
             ?>
             <div class="MainPage">  
                 <div class="MainTextDiv">
                     <p class="CircleSubPlans"> Circle Subscription Plans </p>
-                    <p class="MainText"> Intranet Solutions For Your Firm</p>
+                    <p class="MainText"> Intranet oplossingen voor uw bedrijf</p>
                     <div class="PersonButton">
-                        <p class="SliderActive"> 50 Users </p>
+                        <p class="SliderActive"> 50 gebruikers </p>
                             <div class="SliderDiv">
                                 <label class="switch">
                                     <input type="checkbox" id="checkbox">
                                     <span class="slider" id="slider"></span>
                                 </label>
                             </div>
-                        <p class="SliderNotActive"> 500 Users </p>
+                        <p class="SliderNotActive"> 500 gebruikers </p>
                     </div>
                 </div>
                 <div class="PriceHolder">
                     <div class="DOTSDiv">
                         <div class="TopTextRight">
                             <p class="CircleDOTS">Circle Workspace</p>
-                            <p class="BasicPlan">Basic Plan</p>
+                            <p class="BasicPlan">Basis plan</p>
                         </div>
-                        <p class="StartFrom">Starting From</p>
+                        <p class="StartFrom">Startend vanaf</p>
                         <div class="PriceLeft"> 
-                            <p class="MainPrice" id="mainPriceLeft">140<i class="fa-solid fa-euro-sign EuroSign"></i><p class="Month">/ month</p></p>
+                            <p class="MainPrice" id="mainPriceLeft">140<i class="fa-solid fa-euro-sign EuroSign"></i><p class="Month">/ maand</p></p>
                         </div>
                         <div class="GreyText">
-                            <p class="Grey"> after exceeding <span class="DarkGrey">50 users, </span>the price increases to <span class="Darkgrey">€760</span> </p>
+                            <p class="Grey">wanneer <span class="DarkGrey">50 gebruikers, </span>overschreden is, de prijs verhoogd naar <span class="Darkgrey">€760</span> </p>
                         </div>
                         <div class="DropDownHolder">
                             <div class="DropDown">
                                 <button class="DrpDwnPrice" id="drpDwnPrice"><i class="fa-solid fa-chevron-down" id="drop1"></i></button>
-                                <p class="DropDownText">Improved App Management</p>
+                                <p class="DropDownText">Verbeterde App Management</p>
                             </div>
                             <div class="DropDown">
                                 <button class="DrpDwnPrice"><i class="fa-solid fa-chevron-down"></i></button>
-                                <p class="DropDownText">Better Display Of Communication And Information</p>
+                                <p class="DropDownText">Beter Beeld van Communicatie En Informatie</p>
                             </div>
                             <div class="DropDown">
                                 <button class="DrpDwnPrice"><i class="fa-solid fa-chevron-down"></i></button>
-                                <p class="DropDownText">Easier Document Management</p>
+                                <p class="DropDownText">Simpelere Document Management</p>
                             </div>
                             <div class="DropDown">
                                 <button class="DrpDwnPrice"><i class="fa-solid fa-chevron-down"></i></button>
-                                <p class="DropDownText">Analytics For Improved Outcomes</p>
+                                <p class="DropDownText">Analyses Voor Verbeterde Uitkomsten</p>
                             </div>
                         </div>
                         <div class="BottomButtons">
-                            <button class="BuyButton">Buy Now</button>
+                            <button class="BuyButton">Koop Nu</button>
                             <a href="contact.php">
                                 <button class="ContactButton" >Contact</button>
                             </a>
@@ -70,35 +69,35 @@ include_once("englishfiles.php");
                     <div class="DOTSDiv">
                         <div class="TopTextRight">
                             <p class="CircleDOTS">Circle D.O.T.S.</p>
-                            <p class="BasicPlan">professional plan</p>
+                            <p class="BasicPlan">professionele plan</p>
                         </div>
-                        <p class="StartFrom">Starting From</p>
+                        <p class="StartFrom">Startend vanaf</p>
                         <div class="PriceLeft"> 
-                            <p class="MainPrice" id="mainPriceRight">180<i class="fa-solid fa-euro-sign EuroSign"></i><p class="Month">/ month</p></p>
+                            <p class="MainPrice" id="mainPriceRight">180<i class="fa-solid fa-euro-sign EuroSign"></i><p class="Month">/ maand</p></p>
                         </div>
                         <div class="GreyText">
-                            <p class="Grey"> after exceeding <span class="DarkGrey">50 users, </span>the price increases to <span class="Darkgrey">€799</span> </p>
+                            <p class="Grey"> wanneer <span class="DarkGrey">50 gebruikers, </span>is overschreden, de prijs is verhoofd naar <span class="Darkgrey">€799</span> </p>
                         </div>
                         <div class="DropDownHolder">
                             <div class="DropDown">
                                 <button class="DrpDwnPrice"><i class="fa-solid fa-chevron-down"></i></button>
-                                <p class="DropDownText">Enhanced Internal Communication</p>
+                                <p class="DropDownText">geavanceerde Interne Communicatie</p>
                             </div>
                             <div class="DropDown">
                                 <button class="DrpDwnPrice"><i class="fa-solid fa-chevron-down"></i></button>
-                                <p class="DropDownText">Engage And Connect Your Teams</p>
+                                <p class="DropDownText">Betrek En Verbind Je Teams</p>
                             </div>
                             <div class="DropDown">
                                 <button class="DrpDwnPrice"><i class="fa-solid fa-chevron-down"></i></button>
-                                <p class="DropDownText">Knowledge Management For All</p>
+                                <p class="DropDownText">Kennis Management Voor Iedereen</p>
                             </div>
                             <div class="DropDown">
                                 <button class="DrpDwnPrice"><i class="fa-solid fa-chevron-down"></i></button>
-                                <p class="DropDownText">Analytics For Improved Outcomes</p>
+                                <p class="DropDownText">Analyses Voor Verbeterde Uitkomsten</p>
                             </div>
                         </div>
                         <div class="BottomButtons">
-                            <button class="BuyButton">Buy Now</button>
+                            <button class="BuyButton">Koop Nu</button>
                             <a href="contact.php">
                                 <button class="ContactButton" >Contact</button>
                             </a>
@@ -108,4 +107,3 @@ include_once("englishfiles.php");
             <script src="./js/radioslider.js"></script>
         </body>
     </html>
-?>

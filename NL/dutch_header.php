@@ -1,5 +1,5 @@
 <?php 
-function render_header() {
+function render_dutch_header() {
   $pages = [
     "Home" => "index.php",
     "Solutions" => "solutions.php",
@@ -36,12 +36,12 @@ function render_header() {
         </span>
       </div>
       <div class="headerright">
-        <div class="dropdown">
+       <div class="dropdown">
           <button class="dropbtn">
-            EN <i class="fa-solid fa-chevron-down"></i>
+            NL <i class="fa-solid fa-chevron-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="NL/solutions.php">NL</a>
+            <a href="../solutions.php">EN</a>
           </div>
         </div>
         <button class="Demobutton">Try Demo</button>

@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.MainPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: white;
+    padding: 35px;
+    margin: 35px;
+    .MainTextDiv{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+        .CircleSubPlans { 
+            display: flex;
+            border: solid black 2px;
+            border-radius: 30px;
+            font-size: 1.8rem;
+            font-family: Inter;
+            padding:10px 20px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            width: fit-content;
+            height: fit-content;
+        }
+        .MainText {
+            display: flex;
+            font-family: Inter;
+            font-size: 70px;
+            align-items: center;
+            width: 800px;
+            font-weight: 900;
+            margin-top: 50px;
+            margin-bottom: 0px;
+        }
+        .PersonButton{
+            border: 2px solid black;
+            border-radius: 25px;
+            justify-content: space-evenly;
+            display: inline-flex ;
+            align-items: center;
+            padding: 2px 20px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            .SliderActive{
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 0px;
+            margin-right: 15px;
+            }
+            .SliderNotActive{
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 15px;
+            margin-right: 0px;
+            }
+            .SliderDiv
+            {
+                display: flex;
+                align-items: center;
+            }
+            .form 
+                {
+                    display: flex;
+                    align-items: center;
+                }
+                .switch {
+                    --secondary-container: #00084B;
+                    --primary: white;
+                    font-size: 17px;
+                    position: relative;
+                    display: inline-block;
+                    width: 3.85em;
+                    height: 1.95em;
+                    border: 2px solid black;
+                    border-radius: 30px;
+                }
+                
+                .switch input {
+                    display: none;
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+                
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: white;
+                    transition: .2s;
+                    border-radius: 30px;
+                }
+                
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 1.4em;
+                    width: 1.4em;
+                    border-radius: 20px;
+                    left: 0.2em;
+                    bottom: 0.2em;
+                    background-color: #00084b;
+                    transition: .4s;
+                }
+                
+                input:checked + .slider::before {
+                    background-color: var(--primary);
+                }
+                
+                input:checked + .slider {
+                    background-color: var(--secondary-container);
+                }
+                
+                input:focus + .slider {
+                    box-shadow: 0 0 1px var(--secondary-container);
+                }
+                
+                input:checked + .slider:before {
+                    transform: translateX(1.9em);
+                }
+            }
+    }
+    .PriceHolder {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+
+        .WorkspaceDiv {
+            display: flex;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 30px;
+            flex-direction: column;
+            margin: 20px;
+            width: 500px;
+            .TopTextLeft {
+                display: flex;
+                justify-content: space-between;
+                .CircleWorkspace {
+                    font-weight: bold;
+                    font-family: Inter;
+                    font-size: 25px;
+                }
+                .BasicPlan{
+                    font-family: Inter;
+                    color: gray;
+                    font-size: small;
+                    position: relative;
+                    top: 25%;
+                }
+            }
+            .StartFrom {
+                font-family: Inter;
+                color: gray;
+                font-size: 15px;
+                padding-top: 30px;
+                font-weight: 900;
+            }
+            .PriceLeft {
+                display:inline-flex;
+                .MainPrice {
+                    font-family: Inter;
+                    font-weight: 900;
+                    font-size: 70px;
+                }
+                .EuroSign 
+                {
+                    font-size: 20px;
+                    font-weight: 900;
+                    position: relative;
+                    bottom: 50%; 
+                }
+                .Month {
+                    font-family: Inter;
+                    font-size: 25px;
+                    position: relative;
+                    top: 50%;
+                }
+            }
+            .DarkGrey {
+               color: darkslategray;
+               font-family: Inter;
+               font-size: small;
+               font-weight: 600;
+            }
+            .Grey {
+                color: gray;
+                font-family: Inter;
+                font-size: small;
+                font-weight: 600;
+            }
+            }
+        }
+        .DOTSDiv 
+        {
+            display: flex;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 30px;
+            flex-direction: column;
+            margin: 20px;
+            width: 500px;
+            .TopTextRight 
+            {
+                display: flex;
+                justify-content: space-between;
+                .CircleDOTS 
+                {
+                    display: flex;
+                    font-weight: bold;
+                    font-family: Inter;
+                    font-size: 25px;
+                
+                }
+                .BasicPlan{
+                    display: flex;
+                    font-family: Inter;
+                    color: gray;
+                    font-size: small;
+                    align-items: center;
+                    justify-content: right;
+                    position: relative;
+                    bottom: 50%;
+                }
+            }
+            .StartFrom {
+                font-family: Inter;
+                color: gray;
+                font-size: 15px;
+                padding-top: 30px;
+                font-weight: 900;
+            }
+            .PriceLeft {
+                display:inline-flex;
+                .MainPrice {
+                    font-family: Inter;
+                    font-weight: 900;
+                    font-size: 70px;
+                }
+                .EuroSign 
+                {
+                    font-size: 20px;
+                    font-weight: 900;
+                    position: relative;
+                    bottom: 50%;
+                }
+                .Month {
+                    font-family: Inter;
+                    font-size: 25px;
+                    position: relative;
+                    top: 50%;
+                }
+            }
+            .DarkGrey {
+               color: darkslategray;
+               font-family: Inter;
+               font-size: small;
+               font-weight: 600;
+            }
+            .Grey {
+                color: gray;
+                font-family: Inter;
+                font-size: small;
+                font-weight: 600;
+            }
+            }
+        }
+    .DropDownHolder 
+    {
+        display: flex;
+        flex-direction: column;
+        
+        .DropDown 
+        {
+            display: flex;
+            flex-direction: row;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+            .DrpDwnPrice
+            {
+                font-size: 18px;
+                border: 0;
+                border-radius: 8px;
+                padding: 5px;
+                background-color: #D8D8D8;
+            }
+            .DrpDwnPrice:hover {
+                background-color: gray;
+            }
+            .DropDownText 
+            {
+                display: flex;
+                align-items: center;
+                font-family: Inter;
+                font-weight: 900;
+                padding-left: 10px;
+            }
+        }
+    
+    .BuyButton 
+    {
+        border-radius: 10px;
+        font-size: 1.2rem;
+        background-color: #00084B;
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        margin-left: 0px;
+        margin-right: 10px;
+        transition: .3s;
+        &:hover {background-color: #00090B; transition: .3s; cursor: pointer;}
+    }
+    .ContactButton 
+    {
+        border-radius: 10px;
+        font-size: 1.2rem;
+        background-color: white;
+        border: black solid 2px;
+        padding: 15px 30px;
+        transition: .3s;
+        &:hover {background-color: lightgray; transition: .3s; cursor: pointer;}
+    }
+    
+
+        
+
+    
