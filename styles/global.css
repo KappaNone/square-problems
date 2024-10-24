@@ -15,6 +15,7 @@
   border: none;
   align-items: center;
   padding: 12px 0;
+  background-color: #fff;
 }
 .header .headerbuttonbox {
   display: flex;
@@ -64,11 +65,14 @@
   background: none;
   margin: 20px;
   font-size: 1.3rem;
+  height: -moz-max-content;
   height: max-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .header .headerbuttonbox .headerbutton:hover {
-  text-decoration: underline darkslategray;
+  -webkit-text-decoration: underline darkslategray;
+          text-decoration: underline darkslategray;
 }
 .header .headerbuttonbox .active {
   text-decoration: underline;
@@ -89,7 +93,7 @@
 .header .headerright .Demobutton {
   border-radius: 10px;
   font-size: 1.2rem;
-  background-color: #00084B;
+  background-color: #00084b;
   border: none;
   color: white;
   margin-left: 0px;
@@ -98,7 +102,7 @@
   transition: 0.3s;
 }
 .header .headerright .Demobutton:hover {
-  background-color: #00090B;
+  background-color: #00090b;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -139,6 +143,4 @@
 }
 .header .headerright .dropdown-content a:hover {
   background-color: #ddd;
-}
-
-/*# sourceMappingURL=global.css.map */
+}/*# sourceMappingURL=global.css.map */

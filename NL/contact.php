@@ -1,4 +1,4 @@
-<?php include_once("header.php"); ?>
+<?php include_once("dutch_header.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle Solutions | Contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/contactPage.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/contactPage.css" />
   </head>
   <body>
-    <?php render_header(); ?>
+    <?php render_dutch_header(); ?>
     <main>
       <div class="mediaAndMapContainer">
         <div class="media">
-          <h2>Visit Us 👋</h2>
+          <h2>Bezoek ons 👋</h2>
           <form action="" id="newsletterForm">
-            <input type="email" name="newsletterEmail" id="newsletterEmail" placeholder="Type your email" required />
-            <input type="submit" value="Submit" />
+            <input type="email" name="newsletterEmail" id="newsletterEmail" placeholder="Vul uw E-mail in" required />
+            <input type="submit" value="Sturen" />
           </form>
-          <span>or our social medias</span>
+          <span>of onze sociale media</span>
           <div class="socials">
             <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -64,22 +64,22 @@
       </div>
       <div class="contactContainer">
         <div class="contactInfo">
-          <h2>Contact Us</h2>
+          <h2>Zoek Contact</h2>
           <div class="grid">
             <div>
               <span>E-mail</span>
               <b>Circles@solutions.com</b>
             </div>
             <div class="phone">
-              <span> Phone </span>
+              <span> Telefoon </span>
               <b>+31 6 567788234</b>
             </div>
             <div>
-              <span> Street </span>
+              <span> Adres </span>
               <b>Van Schaikweg 94</b>
             </div>
             <div>
-              <span>City</span>
+              <span>Stad</span>
               <b>Emmen</b>
             </div>
             <div>
@@ -91,8 +91,8 @@
         <form id="contactForm">
           <div>
             <div>
-              <label for="topic">Topic</label>
-              <input type="text" name="topic" id="topic" placeholder="Topic" required />
+              <label for="topic">Onderwerp</label>
+              <input type="text" name="topic" id="topic" placeholder="Onderwerp" required />
             </div>
             <div>
               <label for="email">Email</label>
@@ -100,13 +100,13 @@
             </div>
           </div>
 
-          <label for="message">Message</label>
+          <label for="message">Bericht</label>
           <textarea
             id="message"
             name="message"
             rows="4"
             cols="50"
-            placeholder="Type"
+            placeholder="Typ een bericht"
             required
             minlength="20"
           ></textarea>

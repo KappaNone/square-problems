@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
 }
 
 main {
@@ -236,7 +236,7 @@ main .contactContainer .contactInfo .grid .phone {
 main .contactContainer #contactForm {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  width: 670px;
 }
 @media (max-width: 1400px) {
   main .contactContainer #contactForm {
@@ -292,6 +292,4 @@ main .contactContainer #contactForm div div:nth-child(2) {
 main .contactContainer #contactForm div div:nth-child(2) label {
   width: 95%;
   text-align: left;
-}
-
-/*# sourceMappingURL=contactPage.css.map */
+}/*# sourceMappingURL=contactPage.css.map */

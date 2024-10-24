@@ -1,26 +1,26 @@
 <?php
-include_once("header.php");
+include_once("dutch_header.php");
 $reviews = [
     [
         "name" => "John Dough",
-        "company" => "Senior Operations Coordinator – Cookiegenerator inc.",
-        "text" => "A user friendly, customizable platform for communication and shared work
-        spaces. Easy to create a customized internal platform for company
-        communications, news, and resources for employee needs through pre-built
-        templates.",
+        "company" => "Senior Operatie Coordinator – Cookiegenerator inc.",
+        "text" => "Een gebruiksvriendelijk, aanpasbaar platform voor communicatie en gedeeld werk
+        ruimtes. Gemakkelijk om een ​​aangepast intern platform voor het bedrijf te creëren
+        communicatie, nieuws en bronnen voor de behoeften van werknemers via vooraf gebouwde
+        sjablonen.",
         "rate" => 4.89
     ],
     [ "name" => "Petty Dwarves",
-      "company"=>"Director of Marketing and Communications – Little Cloths ltd.",
-      "text" =>"The ability to quickly communicate and scale collaboration is second
-      to none Users across the globe can receive information, connect and collaborate
-      in real time – answer questions quickly and publicly to avoid duplicative emails.",
+      "company"=>"Directeur van Marketing en Communicatiie – Little Cloths ltd.",
+      "text" =>"Het vermogen om snel te communiceren en samenwerking op te schalen komt op de tweede plaats
+      naar geen Gebruikers over de hele wereld kunnen informatie ontvangen, verbinding maken en samenwerken
+      in realtime – beantwoord vragen snel en openbaar om dubbele e-mails te voorkomen.",
       "rate"=> 4.62
     ],
     [ "name" =>"Halluci Absinthe",
-      "company" =>"People Operations Manager – Green Fairy Company",
-      "text" =>"Our onboarding experience has greatly improved thanks to Happeo’s Pages. Instead of having a quick
-       meeting and sending out slides to new employees, we now have an entire Page they can easily refer to.",
+      "company" =>"mensen Operatie Manager – Green Fairy Company",
+      "text" =>"Onze onboarding-ervaring is enorm verbeterd dankzij Happeo's Pages. In plaats van snel te zijn
+       ontmoeten en dia's naar nieuwe medewerkers sturen, hebben we nu een hele pagina waar ze gemakkelijk naar kunnen verwijzen.",
        "rate" => 4.74
 
     ]
@@ -39,7 +39,7 @@ function render_reviews($reviews) {
             <div class="grid-item">
                     <div class="review-header" >
                         <div class="review-header-left">
-                            <img src="img/circle.jpg" alt="circle">
+                            <img src="../img/circle.jpg" alt="circle">
                             <div class="review-credentials">
                                 <h3>' . $name . '</h3>
                                 <div class="company">' . $company . '</div>
@@ -66,18 +66,18 @@ function render_reviews($reviews) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/reviews.css" type="text/css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/reviews.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Circle Solutions | Reviews</title>
 </head>
 
 <body>
-    <?php render_header(); ?>
+    <?php render_dutch_header(); ?>
     <div class="layout">
         <div class="header-container">
-            <p class="top">See What Customer Think About Us</p>
-            <h1 class="bottom">Customer Reviews</h1>
+            <p class="top">Zie wat gebruikers van ons vinden</p>
+            <h1 class="bottom">Gebruiker Reviews</h1>
         </div>
         
         <div class="reviews-grid">

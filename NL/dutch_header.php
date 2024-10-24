@@ -1,18 +1,18 @@
 <?php 
-function render_header() {
+function render_dutch_header() {
   $pages = [
-    "Home" => "index.php",
-    "Solutions" => "solutions.php",
+    "Thuis" => "index.php",
+    "Oplossingen" => "solutions.php",
     "Contact" => "contact.php",
-    "Customer Reviews" => "reviews.php",
+    "Gebruiker Reviews" => "reviews.php",
     "FAQ" => "faq.php"
   ];
   
   echo '
     <div class="header">
       <div class="headerbuttonbox">
-        <a href="' . $pages["Home"] . '">
-          <img src="img/circlesolutions.png" alt="logo" class="headerlogo"/>
+        <a href="' . $pages["Thuis"] . '">
+          <img src="../img/circlesolutions.png" alt="logo" class="headerlogo"/>
           </a>
         <div class="hamburgermenu">
           <button class="hamburger-btn" id="hamburger-button">
@@ -31,21 +31,21 @@ function render_header() {
       echo '<a href="' . $page_link . '"><button class="headerbutton">' . $page_name . '</button></a>';
     }
   }
+
   echo '
         </span>
       </div>
       <div class="headerright">
-        <div class="dropdown">
+       <div class="dropdown">
           <button class="dropbtn">
-            EN <i class="fa-solid fa-chevron-down"></i>
+            NL <i class="fa-solid fa-chevron-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="NL/' . basename($_SERVER["PHP_SELF"]) . '">NL</a>
+            <a href="../' . basename($_SERVER["PHP_SELF"]) . '">EN</a>
           </div>
         </div>
         <button class="Demobutton">Try Demo</button>
       </div>
     </div>
-    <script src="js/hamburgerMenu.js"></script>';
-
+    <script src="../js/hamburgerMenu.js"></script>';
 }

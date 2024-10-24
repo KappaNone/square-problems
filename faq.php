@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ</title>
+  <title>Circle Solutions | FAQ</title>
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/faq.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -137,13 +137,21 @@
           </p>
         </div>
       </div>
+      <?php
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+          echo "<p class='thanks'>Thank you for your question!</p>"; 
+        } else {
+      ?>
+
       <div class="submit_question">
-        <form action="submit_question.php" method="post">
+        <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
           <label for="question">Have a question? Ask us:</label><br>
           <textarea name="question" id="question" rows="4" cols="50" required></textarea><br>
-          <input type="submit" value="Submit">
+          <input type="submit">
         </form>
       </div>
+
+      <?php } ?>
     </div>
   </div>
 
