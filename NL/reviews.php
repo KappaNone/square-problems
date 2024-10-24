@@ -39,7 +39,7 @@ function render_reviews($reviews) {
             <div class="grid-item">
                     <div class="review-header" >
                         <div class="review-header-left">
-                            <img src="img/circle.jpg" alt="circle">
+                            <img src="../img/circle.jpg" alt="circle">
                             <div class="review-credentials">
                                 <h3>' . $name . '</h3>
                                 <div class="company">' . $company . '</div>
