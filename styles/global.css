@@ -15,6 +15,7 @@
   border: none;
   align-items: center;
   padding: 12px 0;
+  background-color: #fff;
 }
 .header .headerbuttonbox {
   display: flex;
@@ -92,7 +93,7 @@
 .header .headerright .Demobutton {
   border-radius: 10px;
   font-size: 1.2rem;
-  background-color: #00084B;
+  background-color: #00084b;
   border: none;
   color: white;
   margin-left: 0px;
@@ -101,7 +102,7 @@
   transition: 0.3s;
 }
 .header .headerright .Demobutton:hover {
-  background-color: #00090B;
+  background-color: #00090b;
   transition: 0.3s;
   cursor: pointer;
 }
