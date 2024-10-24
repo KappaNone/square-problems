@@ -20,7 +20,7 @@
             <a href="contact.php"><button>Contact</button></a>
             </div>
         </div>
-        <img src="img/mainSectionImg.png" alt="main-image" class="main-img" />
+        <img src="../img/mainSectionImg.png" alt="main-image" class="main-img" />
         </main>
     </body>
     </html>

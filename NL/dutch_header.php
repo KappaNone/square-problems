@@ -12,7 +12,7 @@ function render_dutch_header() {
     <div class="header">
       <div class="headerbuttonbox">
         <a href="' . $pages["Thuis"] . '">
-          <img src="img/circlesolutions.png" alt="logo" class="headerlogo"/>
+          <img src="../img/circlesolutions.png" alt="logo" class="headerlogo"/>
           </a>
         <div class="hamburgermenu">
           <button class="hamburger-btn" id="hamburger-button">
