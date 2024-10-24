@@ -78,7 +78,7 @@
   align-items: center;
 }
 .MainPage .MainTextDiv .PersonButton .switch {
-  --secondary-container: #00084B;
+  --secondary-container: #00084b;
   --primary: white;
   font-size: 17px;
   position: relative;
@@ -132,6 +132,12 @@
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1100px) {
+  .MainPage .PriceHolder {
+    flex-direction: column;
+  }
 }
 .MainPage .PriceHolder .WorkspaceDiv {
   display: flex;
@@ -205,6 +211,7 @@
   flex-direction: column;
   margin: 20px;
   width: 500px;
+  min-height: 510px;
 }
 .MainPage .DOTSDiv .TopTextRight {
   display: flex;
@@ -272,22 +279,36 @@
 }
 .DropDownHolder .DropDown {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.DropDownHolder .DropDown div {
+  display: flex;
+}
+.DropDownHolder .DropDown p {
+  display: none;
+  transition: display 0.3s ease-in-out;
+}
+.DropDownHolder .DropDown p.visible {
+  margin-top: 8px;
+  display: block;
 }
 .DropDownHolder .DrpDwnPrice {
   font-size: 18px;
   border: 0;
   border-radius: 8px;
   padding: 5px;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
+  width: 30px;
+  height: 30px;
 }
 .DropDownHolder .DrpDwnPrice:hover {
   background-color: gray;
+  cursor: pointer;
 }
 .DropDownHolder .DropDownText {
-  display: flex;
+  display: flex !important;
   align-items: center;
   font-family: Inter;
   font-weight: 900;
@@ -297,7 +318,7 @@
 .BuyButton {
   border-radius: 10px;
   font-size: 1.2rem;
-  background-color: #00084B;
+  background-color: #00084b;
   border: none;
   color: white;
   padding: 15px 30px;
@@ -306,7 +327,7 @@
   transition: 0.3s;
 }
 .BuyButton:hover {
-  background-color: #00090B;
+  background-color: #00090b;
   transition: 0.3s;
   cursor: pointer;
 }
