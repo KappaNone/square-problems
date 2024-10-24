@@ -47,5 +47,5 @@ function render_dutch_header() {
         <button class="Demobutton">Try Demo</button>
       </div>
     </div>
-    <script src="js/hamburgerMenu.js"></script>';
+    <script src="../js/hamburgerMenu.js"></script>';
 }
