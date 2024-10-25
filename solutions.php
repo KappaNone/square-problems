@@ -37,9 +37,9 @@ include_once("englishfiles.php");
             </div>
         </div>
         <div class="PriceHolder">
-            <div class="DOTSDiv">
+            <div class="WorkspaceDiv">
                 <div class="TopTextRight">
-                    <p class="CircleDOTS">Circle Workspace</p>
+                    <p class="CircleWorkspace">Circle Workspace</p>
                     <p class="BasicPlan">Basic Plan</p>
                 </div>
                 <p class="StartFrom">Starting From</p>
@@ -49,7 +49,7 @@ include_once("englishfiles.php");
                     </p>
                 </div>
                 <div class="GreyText">
-                    <p class="Grey"> after exceeding <span class="DarkGrey">50 users, </span>the price increases to <span class="Darkgrey">€760</span> </p>
+                    <p class="Grey"> after exceeding <span class="DarkGrey">50 users, </span>the price increases to <span class="DarkGrey">€760</span> </p>
                 </div>
                 <div class="DropDownHolder">
                     <div class="DropDown">
@@ -101,7 +101,7 @@ include_once("englishfiles.php");
                     </p>
                 </div>
                 <div class="GreyText">
-                    <p class="Grey"> after exceeding <span class="DarkGrey">50 users, </span>the price increases to <span class="Darkgrey">€799</span> </p>
+                    <p class="Grey"> after exceeding <span class="DarkGrey">50 users, </span>the price increases to <span class="DarkGrey">€799</span> </p>
                 </div>
                 <div class="DropDownHolder">
                     <div class="DropDown">

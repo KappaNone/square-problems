@@ -31,9 +31,9 @@
             </div>
         </div>
         <div class="PriceHolder">
-            <div class="DOTSDiv">
+            <div class="WorkspaceDiv">
                 <div class="TopTextRight">
-                    <p class="CircleDOTS">Circle Workspace</p>
+                    <p class="CircleWorkspace">Circle Workspace</p>
                     <p class="BasicPlan">Basis Plan</p>
                 </div>
                 <p class="StartFrom">Vanaf</p>
@@ -43,7 +43,7 @@
                     </p>
                 </div>
                 <div class="GreyText">
-                    <p class="Grey"> na het overschrijden van <span class="DarkGrey">50 gebruikers, </span>stijgt de prijs naar <span class="Darkgrey">€760</span> </p>
+                    <p class="Grey"> na het overschrijden van <span class="DarkGrey">50 gebruikers, </span>stijgt de prijs naar <span class="DarkGrey">€760</span> </p>
                 </div>
                 <div class="DropDownHolder">
                     <div class="DropDown">
@@ -95,7 +95,7 @@
                     </p>
                 </div>
                 <div class="GreyText">
-                    <p class="Grey"> na het overschrijden van <span class="DarkGrey">50 gebruikers, </span>stijgt de prijs naar <span class="Darkgrey">€799</span> </p>
+                    <p class="Grey"> na het overschrijden van <span class="DarkGrey">50 gebruikers, </span>stijgt de prijs naar <span class="DarkGrey">€799</span> </p>
                 </div>
                 <div class="DropDownHolder">
                     <div class="DropDown">

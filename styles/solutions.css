@@ -147,26 +147,30 @@
   flex-direction: column;
   margin: 20px;
   width: 500px;
+  background-image: url(../img/backimgDOTS.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.MainPage .PriceHolder .WorkspaceDiv .TopTextLeft {
+.MainPage .PriceHolder .WorkspaceDiv .TopTextRight {
   display: flex;
   justify-content: space-between;
 }
-.MainPage .PriceHolder .WorkspaceDiv .TopTextLeft .CircleWorkspace {
+.MainPage .PriceHolder .WorkspaceDiv .TopTextRight .CircleWorkspace {
   font-weight: bold;
   font-family: Inter;
   font-size: 25px;
 }
-.MainPage .PriceHolder .WorkspaceDiv .TopTextLeft .BasicPlan {
+.MainPage .PriceHolder .WorkspaceDiv .TopTextRight .BasicPlan {
   font-family: Inter;
-  color: gray;
+  color: black;
   font-size: small;
   position: relative;
   top: 25%;
 }
 .MainPage .PriceHolder .WorkspaceDiv .StartFrom {
   font-family: Inter;
-  color: gray;
+  color: white;
   font-size: 15px;
   padding-top: 30px;
   font-weight: 900;
@@ -192,7 +196,7 @@
   top: 50%;
 }
 .MainPage .PriceHolder .WorkspaceDiv .DarkGrey {
-  color: darkslategray;
+  color: white;
   font-family: Inter;
   font-size: small;
   font-weight: 600;
@@ -212,6 +216,9 @@
   margin: 20px;
   width: 500px;
   min-height: 510px;
+  background-image: url(../img/backimgworkspace.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .MainPage .DOTSDiv .TopTextRight {
   display: flex;
@@ -226,7 +233,7 @@
 .MainPage .DOTSDiv .TopTextRight .BasicPlan {
   display: flex;
   font-family: Inter;
-  color: gray;
+  color: white;
   font-size: small;
   align-items: center;
   justify-content: right;
@@ -235,7 +242,7 @@
 }
 .MainPage .DOTSDiv .StartFrom {
   font-family: Inter;
-  color: gray;
+  color: white;
   font-size: 15px;
   padding-top: 30px;
   font-weight: 900;
@@ -261,7 +268,7 @@
   top: 50%;
 }
 .MainPage .DOTSDiv .DarkGrey {
-  color: darkslategray;
+  color: white;
   font-family: Inter;
   font-size: small;
   font-weight: 600;

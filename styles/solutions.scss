@@ -152,8 +152,12 @@
       flex-direction: column;
       margin: 20px;
       width: 500px;
+      background-image: url(../img/backimgDOTS.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
 
-      .TopTextLeft {
+      .TopTextRight {
         display: flex;
         justify-content: space-between;
         .CircleWorkspace {
@@ -163,7 +167,7 @@
         }
         .BasicPlan {
           font-family: Inter;
-          color: gray;
+          color: black;
           font-size: small;
           position: relative;
           top: 25%;
@@ -171,7 +175,7 @@
       }
       .StartFrom {
         font-family: Inter;
-        color: gray;
+        color: white;
         font-size: 15px;
         padding-top: 30px;
         font-weight: 900;
@@ -197,7 +201,7 @@
         }
       }
       .DarkGrey {
-        color: darkslategray;
+        color: white;
         font-family: Inter;
         font-size: small;
         font-weight: 600;
@@ -219,6 +223,9 @@
     margin: 20px;
     width: 500px;
     min-height: 510px;
+    background-image: url(../img/backimgworkspace.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     .TopTextRight {
       display: flex;
       justify-content: space-between;
@@ -231,7 +238,7 @@
       .BasicPlan {
         display: flex;
         font-family: Inter;
-        color: gray;
+        color: white;
         font-size: small;
         align-items: center;
         justify-content: right;
@@ -241,7 +248,7 @@
     }
     .StartFrom {
       font-family: Inter;
-      color: gray;
+      color: white;
       font-size: 15px;
       padding-top: 30px;
       font-weight: 900;
@@ -267,7 +274,7 @@
       }
     }
     .DarkGrey {
-      color: darkslategray;
+      color: white;
       font-family: Inter;
       font-size: small;
       font-weight: 600;
