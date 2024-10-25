@@ -6,6 +6,10 @@
   font-family: "Inter", sans-serif;
 }
 
+textarea {
+  resize: none;
+}
+
 .header {
   display: flex;
   width: 100%;
